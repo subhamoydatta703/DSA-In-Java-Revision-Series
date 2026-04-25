@@ -9,6 +9,7 @@ This repository contains a collection of Java implementations for various Data S
 - **hashing/**: Implements hashing-based solutions for problems like finding duplicates, frequencies, two-sum variants, union, intersection, and more.
 - **patterns/**: Includes code for printing various patterns using loops and recursion.
 - **recursion/**: Covers basic recursive algorithms for printing sequences, calculating sums, factorials, palindromes, and other recursive patterns.
+- **revision/**: Contains renamed revision/practice programs, currently covering longest subarray sum equal to `k` and zero-sum subarray detection.
 
 ## Prerequisites
 
@@ -17,16 +18,25 @@ This repository contains a collection of Java implementations for various Data S
 
 ## How to Run
 
-1. Navigate to the desired folder and file.
-2. Compile the Java file using `javac <filename>.java`.
-3. Run the compiled class using `java <classname>`.
+1. Open a terminal at the repository root.
+2. Compile the Java file using `javac <folder>/<filename>.java`.
+3. Run the compiled class using `java <folder>.<classname>`.
 
 For example:
 
 ```bash
-cd arrays
-javac ArrayInputSortPractice.java
-java ArrayInputSortPractice
+javac arrays/ArrayInputSortPractice.java
+java arrays.ArrayInputSortPractice
+```
+
+Revision examples:
+
+```bash
+javac revision/LongestSubarraySumEqualsKRevision.java
+java revision.LongestSubarraySumEqualsKRevision
+
+javac revision/ZeroSumSubarrayRevision.java
+java revision.ZeroSumSubarrayRevision
 ```
 
 Note: Some programs may require input from the console. Ensure to provide the necessary inputs as prompted.
