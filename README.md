@@ -9,7 +9,7 @@ This repository contains a collection of Java implementations for various Data S
 - **hashing/**: Implements hashing-based solutions for problems like finding duplicates, frequencies, two-sum variants, union, intersection, and more.
 - **patterns/**: Includes code for printing various patterns using loops and recursion.
 - **recursion/**: Covers basic recursive algorithms for printing sequences, calculating sums, factorials, palindromes, and other recursive patterns.
-- **revision/**: Contains renamed revision/practice programs, currently covering longest subarray sum equal to `k` and zero-sum subarray detection, find duplicates in an array, two sum, find the first unique element, find the element with maximum frequency, all pair sum, intersection of 2 arrays, union of 2 arrays, sub array sum is zero, count sub array sum equals to k, longest sub array sum equals to k.
+- **revision/**: Contains renamed revision/practice programs, currently covering longest subarray sum equal to `k` and zero-sum subarray detection, find duplicates in an array, two sum, find the first unique element, find the element with maximum frequency, all pair sum, intersection of 2 arrays, union of 2 arrays, sub array sum is zero, count sub array sum equals to k, longest sub array sum equals to k, checking subset, find group of anagrams.
 
 ## Prerequisites
 
