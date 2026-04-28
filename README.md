@@ -1,50 +1,89 @@
 # DSA in Java
 
-This repository contains a collection of Java implementations for various Data Structures and Algorithms (DSA) problems. It serves as a practice resource for learning and understanding fundamental concepts in computer science.
+This repository is a Java practice workspace for Data Structures and Algorithms. It contains small, focused programs grouped by topic, with each file written as a standalone `main` class that can be compiled and run from the repository root.
 
-## Structure
+## Repository Structure
 
-- **arrays/**: Contains programs related to array manipulations, including sorting, pair sum calculations, and subarray problems.
-- **collections/**: Demonstrates basic usage of Java collections such as Queue and Stack.
-- **hashing/**: Implements hashing-based solutions for problems like finding duplicates, frequencies, two-sum variants, union, intersection, and more.
-- **patterns/**: Includes code for printing various patterns using loops and recursion.
-- **recursion/**: Covers basic recursive algorithms for printing sequences, calculating sums, factorials, palindromes, and other recursive patterns.
-- **revision/**: Contains renamed revision/practice programs, currently covering longest subarray sum equal to `k` and zero-sum subarray detection, find duplicates in an array, two sum, find the first unique element, find the element with maximum frequency, all pair sum, intersection of 2 arrays, union of 2 arrays, sub array sum is zero, count sub array sum equals to k, longest sub array sum equals to k, checking subset, find group of anagrams.
+| Folder | Contents |
+| --- | --- |
+| `arrays/` | Array input, sorting, pair sum, subarray sum, and subarray product practice. |
+| `collections/` | Basic Java `Queue` and `Stack` examples. |
+| `hashing/` | HashMap/HashSet based solutions for frequency counting, duplicates, unique elements, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and longest/count subarray sum equal to `k`. |
+| `patterns/` | Pattern-printing examples using loops and recursion. |
+| `recursion/` | Basic recursion practice and recursive number examples. |
+| `revision/` | Revision implementations for common interview-style problems such as two sum, duplicate detection, unique element, most frequent element, all pair sum, union/intersection, subset check, group anagrams, zero-sum subarray, count subarrays with sum `k`, and longest subarray sum equal to `k`. |
+| `two_pointers/` | Two-pointer examples for palindrome checking, counting distinct values in a sorted array, and finding pairs with sum `k`. |
 
 ## Prerequisites
 
-- Java Development Kit (JDK) 8 or higher installed on your system.
-- A Java IDE or text editor for viewing and editing the code.
+- JDK 8 or newer
+- A terminal, IDE, or text editor
+
+Check your Java installation:
+
+```bash
+java -version
+javac -version
+```
 
 ## How to Run
 
-1. Open a terminal at the repository root.
-2. Compile the Java file using `javac <folder>/<filename>.java`.
-3. Run the compiled class using `java <folder>.<classname>`.
-
-For example:
+Run commands from the repository root. Because the files use Java packages, compile with the folder path and run with the package-qualified class name.
 
 ```bash
 javac arrays/ArrayInputSortPractice.java
 java arrays.ArrayInputSortPractice
 ```
 
-Revision examples:
+More examples:
 
 ```bash
-javac revision/LongestSubarraySumEqualsKRevision.java
-java revision.LongestSubarraySumEqualsKRevision
+javac hashing/TwoSumWithHashMap.java
+java hashing.TwoSumWithHashMap
 
-javac revision/ZeroSumSubarrayRevision.java
-java revision.ZeroSumSubarrayRevision
+javac revision/GroupAnagrams.java
+java revision.GroupAnagrams
+
+javac two_pointers/FindTwoNumSumEqtoK.java
+java two_pointers.FindTwoNumSumEqtoK
 ```
 
-Note: Some programs may require input from the console. Ensure to provide the necessary inputs as prompted.
+Some programs use hard-coded sample arrays, while others may ask for console input. If a program prompts for input, provide the values in the terminal.
+
+## Compile All Files
+
+From PowerShell:
+
+```powershell
+javac (Get-ChildItem -Recurse -Filter *.java).FullName
+```
+
+From Git Bash or a Unix-like shell:
+
+```bash
+javac $(find . -name "*.java")
+```
+
+## Current Topics Covered
+
+- Array traversal, sorting, pair sum, and subarray problems
+- Hashing with `HashMap` and `HashSet`
+- Two-pointer technique
+- Java collection basics
+- Recursion basics
+- Pattern printing
+- Revision problems for repeated practice
+
+## Notes
+
+- File and class names must match exactly when running Java programs. For example, `two_pointers/ChechPalindrome.java` runs as `java two_pointers.ChechPalindrome`.
+- The repository is intended for learning and practice, so many examples are intentionally small and focused.
+- Generated `.class` files are build output and do not need to be committed.
 
 ## Contributing
 
-Feel free to contribute by adding more implementations or improving existing code. Please ensure code is well-commented and follows standard Java conventions.
+Add new examples inside the most relevant topic folder, keep the `package` declaration aligned with the folder name, and use clear class names that describe the problem being solved.
 
 ## License
 
-This project is for educational purposes. Use at your own discretion.
+This project is for educational purposes.
