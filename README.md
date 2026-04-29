@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It contains small, focused programs grouped by topic, with most files written as standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It contains 51 small, focused programs grouped by topic, with most files written as standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application.
 
@@ -14,13 +14,13 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `patterns/` | Pattern-printing examples using loops and recursion. |
 | `recursion/` | Recursion basics and number-recursion practice. |
 | `revision/` | Rewritten/revisited versions of common interview problems for repeated practice. |
-| `two_pointers/` | Two-pointer practice for palindrome checks, array reversal, pair sums, triplet sums, duplicate removal, and distinct-value counting. |
+| `two_pointers/` | Two-pointer practice for palindrome checks, array reversal, pair sums, triplet sums, duplicate removal, moving zeroes, sorted squares, and distinct-value counting. |
 
 ## Topics Covered
 
 - Array traversal, sorting, pair sums, and subarray problems
 - Hashing with `HashMap` and `HashSet`
-- Two-pointer technique on arrays and strings
+- Two-pointer technique on arrays and strings, including reversal, pair search, moving zeroes, and sorted-square style problems
 - Java collection basics
 - Recursion fundamentals
 - Loop-based and recursive pattern printing
@@ -83,8 +83,10 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `CountDiffNumExistinArr.java` - count distinct values in a sorted array.
 - `FindTwoNumSumEqtoK.java` - find pairs with a target sum in a sorted array.
 - `FindTripletSumEqtoZero.java` - find triplet combinations whose sum is zero.
+- `MoveAllZeroAtLastwithMaintainingOrder.java` - move all zeroes to the end while keeping non-zero values in order.
 - `RemoveDuplicatesReturnNewLen.java` - remove duplicates in-place from a sorted array and return the new length.
 - `ReverseArr.java` - reverse an array in-place.
+- `SqEachArrElementReturnSortArr.java` - square each element of a sorted array and print the sorted result.
 - `StringReverse.java` - string palindrome-style two-pointer check.
 - `TripletSumEqtoTarget.java` - placeholder for target triplet-sum practice.
 
