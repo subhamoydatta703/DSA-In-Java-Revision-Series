@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 53 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 55 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -10,11 +10,11 @@ The code is organized for learning, revision, and quick experimentation rather t
 | --- | ---: | --- |
 | `arrays/` | 4 | Array input, sorting, pair-sum practice, subarray sum, and subarray product examples. |
 | `collections/` | 2 | Basic Java `Queue` and `Stack` examples. |
-| `hashing/` | 17 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
+| `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `recursion/` | 2 | Recursion basics and number-recursion practice. |
 | `revision/` | 14 | Rewritten or revisited versions of common interview problems for repeated practice. |
-| `two_pointers/` | 12 | Two-pointer practice for palindrome checks, array and string reversal, pair sums, triplet sums, duplicate removal, moving zeroes, sorted squares, distinct-value counting, and doubled-pair checks. |
+| `two_pointers/` | 13 | Two-pointer practice for palindrome checks, array and string reversal, pair sums, triplet sums, duplicate removal, moving zeroes, sorted squares, distinct-value counting, and doubled-pair checks. |
 
 ## Topics Covered
 
@@ -56,6 +56,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `LengthMaxSubArrSumEqK.java` - length of the longest subarray with sum equal to `k`.
 - `LongestConsecutiveSequenceExample.java` - longest consecutive sequence.
 - `SubArrSumZero.java` - check for zero-sum subarrays.
+- `TopKFrequentElement.java` - print the top `k` most frequent elements.
 - `TwoSumIndicesExample.java` - return indices for two-sum.
 - `TwoSumWithHashMap.java` - two-sum using a hash map.
 - `UniqueElementExample.java` - find unique elements.
@@ -96,6 +97,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `FindTwoNumSumEqtoK.java` - find pairs with a target sum in a sorted array.
 - `MoveAllZeroAtLastwithMaintainingOrder.java` - move all zeroes to the end while keeping non-zero values in order.
 - `RemoveDuplicatesReturnNewLen.java` - remove duplicates in-place from a sorted array and return the new length.
+- `RemoveDuplicatesfromString.java` - remove adjacent duplicate groups from a string.
 - `ReverseArr.java` - reverse an array in-place.
 - `ReverseString.java` - reverse a string using two pointers.
 - `SqEachArrElementReturnSortArr.java` - square each element of a sorted array and print the sorted result.
