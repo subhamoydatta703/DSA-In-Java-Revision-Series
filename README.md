@@ -1,26 +1,26 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It contains 51 small, focused programs grouped by topic, with most files written as standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 53 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
-The code is organized for learning, revision, and quick experimentation rather than as one large application.
+The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
 ## Repository Structure
 
-| Folder | Contents |
-| --- | --- |
-| `arrays/` | Array input, sorting, pair-sum practice, subarray sum, and subarray product examples. |
-| `collections/` | Basic Java `Queue` and `Stack` examples. |
-| `hashing/` | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
-| `patterns/` | Pattern-printing examples using loops and recursion. |
-| `recursion/` | Recursion basics and number-recursion practice. |
-| `revision/` | Rewritten/revisited versions of common interview problems for repeated practice. |
-| `two_pointers/` | Two-pointer practice for palindrome checks, array reversal, pair sums, triplet sums, duplicate removal, moving zeroes, sorted squares, and distinct-value counting. |
+| Folder | Files | Contents |
+| --- | ---: | --- |
+| `arrays/` | 4 | Array input, sorting, pair-sum practice, subarray sum, and subarray product examples. |
+| `collections/` | 2 | Basic Java `Queue` and `Stack` examples. |
+| `hashing/` | 17 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
+| `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
+| `recursion/` | 2 | Recursion basics and number-recursion practice. |
+| `revision/` | 14 | Rewritten or revisited versions of common interview problems for repeated practice. |
+| `two_pointers/` | 12 | Two-pointer practice for palindrome checks, array and string reversal, pair sums, triplet sums, duplicate removal, moving zeroes, sorted squares, distinct-value counting, and doubled-pair checks. |
 
 ## Topics Covered
 
 - Array traversal, sorting, pair sums, and subarray problems
 - Hashing with `HashMap` and `HashSet`
-- Two-pointer technique on arrays and strings, including reversal, pair search, moving zeroes, and sorted-square style problems
+- Two-pointer technique on arrays and strings
 - Java collection basics
 - Recursion fundamentals
 - Loop-based and recursive pattern printing
@@ -42,23 +42,33 @@ The code is organized for learning, revision, and quick experimentation rather t
 
 ### Hashing
 
-- `CountSubArrSumEqK.java`
-- `DuplicateElementsExample.java`
-- `FindAllPairSum.java`
-- `FindIntersection.java`
-- `FindSubset.java`
-- `FindUnion.java`
-- `FirstUniqueElement.java`
-- `FrequencyCountExample.java`
-- `GrpAllAnagrams.java`
-- `HighestFrequencyElement.java`
-- `HighestFrequencyElements.java`
-- `LengthMaxSubArrSumEqK.java`
-- `LongestConsecutiveSequenceExample.java`
-- `SubArrSumZero.java`
-- `TwoSumIndicesExample.java`
-- `TwoSumWithHashMap.java`
-- `UniqueElementExample.java`
+- `CountSubArrSumEqK.java` - count subarrays with sum equal to `k`.
+- `DuplicateElementsExample.java` - find duplicate elements.
+- `FindAllPairSum.java` - find all pairs with a given sum.
+- `FindIntersection.java` - find intersection of arrays.
+- `FindSubset.java` - check whether one array is a subset of another.
+- `FindUnion.java` - find union of arrays.
+- `FirstUniqueElement.java` - find the first unique element.
+- `FrequencyCountExample.java` - count element frequencies.
+- `GrpAllAnagrams.java` - group anagrams.
+- `HighestFrequencyElement.java` - find one highest-frequency element.
+- `HighestFrequencyElements.java` - find highest-frequency elements.
+- `LengthMaxSubArrSumEqK.java` - length of the longest subarray with sum equal to `k`.
+- `LongestConsecutiveSequenceExample.java` - longest consecutive sequence.
+- `SubArrSumZero.java` - check for zero-sum subarrays.
+- `TwoSumIndicesExample.java` - return indices for two-sum.
+- `TwoSumWithHashMap.java` - two-sum using a hash map.
+- `UniqueElementExample.java` - find unique elements.
+
+### Patterns
+
+- `LoopPatterns.java` - pattern printing with loops.
+- `RecursivePatterns.java` - pattern printing with recursion.
+
+### Recursion
+
+- `RecursionBasics.java` - basic recursion examples.
+- `RecursiveNumberPractice.java` - number-based recursion practice.
 
 ### Revision
 
@@ -79,15 +89,17 @@ The code is organized for learning, revision, and quick experimentation rather t
 
 ### Two Pointers
 
+- `AllPairsSmallerisDoublethanLarger.java` - print pairs where the larger value is double the smaller value.
 - `ChechPalindrome.java` - array palindrome check.
 - `CountDiffNumExistinArr.java` - count distinct values in a sorted array.
-- `FindTwoNumSumEqtoK.java` - find pairs with a target sum in a sorted array.
 - `FindTripletSumEqtoZero.java` - find triplet combinations whose sum is zero.
+- `FindTwoNumSumEqtoK.java` - find pairs with a target sum in a sorted array.
 - `MoveAllZeroAtLastwithMaintainingOrder.java` - move all zeroes to the end while keeping non-zero values in order.
 - `RemoveDuplicatesReturnNewLen.java` - remove duplicates in-place from a sorted array and return the new length.
 - `ReverseArr.java` - reverse an array in-place.
+- `ReverseString.java` - reverse a string using two pointers.
 - `SqEachArrElementReturnSortArr.java` - square each element of a sorted array and print the sorted result.
-- `StringReverse.java` - string palindrome-style two-pointer check.
+- `StringReverse.java` - string palindrome check.
 - `TripletSumEqtoTarget.java` - placeholder for target triplet-sum practice.
 
 ## Prerequisites
@@ -124,7 +136,7 @@ javac two_pointers/FindTwoNumSumEqtoK.java
 java two_pointers.FindTwoNumSumEqtoK
 ```
 
-Some programs use hard-coded sample arrays. Others, especially a few files in `arrays/`, read values from standard input with `Scanner`.
+For files that read from standard input, type the expected values after running the program. For example, `arrays/ArrayInputSortPractice.java` expects the array size first, followed by the array elements.
 
 ## Compile All Files
 
@@ -146,13 +158,6 @@ Then run any class with:
 java -cp out two_pointers.ReverseArr
 ```
 
-## Notes
-
-- Package names should match folder names. For example, files in `two_pointers/` should start with `package two_pointers;`.
-- Java class names and file names must match exactly. For example, `two_pointers/ChechPalindrome.java` runs as `java two_pointers.ChechPalindrome`.
-- Generated `.class` files are build output and should not be committed.
-- Some files are experimental practice snippets, so output formatting and edge-case handling may vary by file.
-
 ## Suggested Workflow
 
 1. Pick a topic folder.
@@ -161,6 +166,13 @@ java -cp out two_pointers.ReverseArr
 4. Compile and run the file.
 5. Try changing the array, target value, or edge cases.
 6. Re-implement the same problem in `revision/` after a few days.
+
+## Notes
+
+- Package names should match folder names. For example, files in `two_pointers/` should start with `package two_pointers;`.
+- Java class names and file names must match exactly. For example, `two_pointers/ChechPalindrome.java` runs as `java two_pointers.ChechPalindrome`.
+- Generated `.class` files are build output and should not be committed.
+- Some files are experimental practice snippets, so output formatting and edge-case handling may vary by file.
 
 ## Contributing
 
