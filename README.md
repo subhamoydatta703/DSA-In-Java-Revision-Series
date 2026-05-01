@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 56 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 58 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -14,7 +14,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `recursion/` | 2 | Recursion basics and number-recursion practice. |
 | `revision/` | 14 | Rewritten or revisited versions of common interview problems for repeated practice. |
-| `two_pointers/` | 14 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, triplet sums, duplicate removal, moving zeroes, sorted squares, distinct-value counting, and doubled-pair checks. |
+| `two_pointers/` | 16 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, triplet sums, duplicate and frequency checks, duplicate removal, moving zeroes, sorted squares, distinct-value counting, and doubled-pair checks. |
 
 ## Topics Covered
 
@@ -92,8 +92,10 @@ The code is organized for learning, revision, and quick experimentation rather t
 
 - `AllPairsSmallerisDoublethanLarger.java` - print pairs where the larger value is double the smaller value.
 - `ChechPalindrome.java` - array palindrome check.
+- `CheckDuplicate.java` - check whether a sorted array contains duplicate values.
 - `CheckPalindromeOfASentence.java` - sentence palindrome check that ignores spaces, punctuation, and letter case.
 - `CountDiffNumExistinArr.java` - count distinct values in a sorted array.
+- `FindFreqofTargetElement.java` - find the frequency of a target element in a sorted array by locating its first and last positions.
 - `FindTripletSumEqtoZero.java` - find triplet combinations whose sum is zero.
 - `FindTwoNumSumEqtoK.java` - find pairs with a target sum in a sorted array.
 - `MoveAllZeroAtLastwithMaintainingOrder.java` - move all zeroes to the end while keeping non-zero values in order.
