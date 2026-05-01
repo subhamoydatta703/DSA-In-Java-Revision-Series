@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 61 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 62 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -8,7 +8,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 
 | Folder | Files | Contents |
 | --- | ---: | --- |
-| `arrays/` | 4 | Array input, sorting, pair-sum practice, subarray sum, and subarray product examples. |
+| `arrays/` | 5 | Array input, sorting, pair-sum practice, subarray sum, subarray product, and Codeforces-style array examples. |
 | `collections/` | 2 | Basic Java `Queue` and `Stack` examples. |
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
@@ -32,6 +32,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 
 - `ArrayInputSortPractice.java` - reads an array from input and sorts it.
 - `PairSumInputPractice.java` - input-driven pair-sum practice.
+- `RCB_Problem_CodeForce.java` - Codeforces-style array practice that prints valid center-out element pairs.
 - `SubarrayProductPractice.java` - subarray product counting experiments.
 - `SubarraySumPractice.java` - prefix-sum based subarray sum counting.
 
