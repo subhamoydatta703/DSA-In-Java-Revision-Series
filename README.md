@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 60 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 61 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -14,7 +14,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `recursion/` | 2 | Recursion basics and number-recursion practice. |
 | `revision/` | 14 | Rewritten or revisited versions of common interview problems for repeated practice. |
-| `two_pointers/` | 18 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, triplet sums, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes, sorted squares, distinct-value counting, and doubled-pair checks. |
+| `two_pointers/` | 19 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, triplet sums, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes, sorted squares, distinct-value counting, and doubled-pair checks. |
 
 ## Topics Covered
 
@@ -97,6 +97,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `CountDiffNumExistinArr.java` - count distinct values in a sorted array.
 - `FindCommonElements.java` - print common elements from two sorted arrays.
 - `FindFreqofTargetElement.java` - find the frequency of a target element in a sorted array by locating its first and last positions.
+- `FindPythagorianTriplet.java` - find Pythagorean triplets in a sorted array.
 - `FindTripletSumEqtoZero.java` - find triplet combinations whose sum is zero.
 - `FindTwoNumSumEqtoK.java` - find pairs with a target sum in a sorted array.
 - `MinDifferenceofTwoElements.java` - find the minimum difference between adjacent elements in a sorted array.
@@ -107,7 +108,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `ReverseString.java` - reverse a string using two pointers.
 - `SqEachArrElementReturnSortArr.java` - square each element of a sorted array and print the sorted result.
 - `StringReverse.java` - string palindrome check.
-- `TripletSumEqtoTarget.java` - placeholder for target triplet-sum practice.
+- `ThreeSum.java` - find triplets whose sum is zero after sorting the array.
 
 ## Prerequisites
 
