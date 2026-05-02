@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 62 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 64 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -13,7 +13,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `recursion/` | 2 | Recursion basics and number-recursion practice. |
-| `revision/` | 14 | Rewritten or revisited versions of common interview problems for repeated practice. |
+| `revision/` | 16 | Rewritten or revisited versions of common interview problems, currently split into `hashmap_revision/` and `two_pointer_revision/`. |
 | `two_pointers/` | 19 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, triplet sums, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes, sorted squares, distinct-value counting, and doubled-pair checks. |
 
 ## Topics Covered
@@ -74,20 +74,27 @@ The code is organized for learning, revision, and quick experimentation rather t
 
 ### Revision
 
-- `AllPairsSum.java`
-- `CheckSubset.java`
-- `CountSubArrSumEqtoK.java`
-- `FindDuplicates.java`
-- `FindUniqueElement.java`
-- `GroupAnagrams.java`
-- `IntersectionofArr.java`
-- `LongestSubarraySumEqualsKRevision.java`
-- `LongSubArrSumEqtoK.java`
-- `MostFrequentElement.java`
-- `SubArrSumZero.java`
-- `TwoSum.java`
-- `UnionofArr.java`
-- `ZeroSumSubarrayRevision.java`
+#### HashMap Revision
+
+- `AllPairsSum.java` - revisits finding all pairs with a target sum.
+- `CheckSubset.java` - revisits subset checks using hashing.
+- `CountSubArrSumEqtoK.java` - revisits counting subarrays with sum equal to `k`.
+- `FindDuplicates.java` - revisits duplicate-element detection.
+- `FindUniqueElement.java` - revisits finding unique elements.
+- `GroupAnagrams.java` - revisits grouping strings by anagram signature.
+- `IntersectionofArr.java` - revisits array intersection.
+- `LongestSubarraySumEqualsKRevision.java` - revisits longest subarray length with sum equal to `k`.
+- `LongSubArrSumEqtoK.java` - another longest-subarray-sum revision.
+- `MostFrequentElement.java` - revisits finding the most frequent element.
+- `SubArrSumZero.java` - revisits zero-sum subarray checks.
+- `TwoSum.java` - revisits two-sum using hashing.
+- `UnionofArr.java` - revisits array union.
+- `ZeroSumSubarrayRevision.java` - another zero-sum subarray revision.
+
+#### Two-Pointer Revision
+
+- `CheckPalindromeArray.java` - checks whether an integer array is a palindrome.
+- `ReverseArray.java` - reverses an integer array in-place.
 
 ### Two Pointers
 
@@ -138,8 +145,8 @@ More examples:
 javac hashing/TwoSumWithHashMap.java
 java hashing.TwoSumWithHashMap
 
-javac revision/GroupAnagrams.java
-java revision.GroupAnagrams
+javac revision/hashmap_revision/GroupAnagrams.java
+java revision.hashmap_revision.GroupAnagrams
 
 javac two_pointers/FindTwoNumSumEqtoK.java
 java two_pointers.FindTwoNumSumEqtoK
