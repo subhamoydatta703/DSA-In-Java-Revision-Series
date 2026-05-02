@@ -2,7 +2,7 @@ package two_pointers;
 
 public class RemoveDuplicatesReturnNewLen {
     public static void main(String[] args) {
-        int arr[] = { 1, 1, 2, 3, 3, 4 }, l = 0, r = l + 1;
+        int arr[] = { 1, 2, 2, 3, 3, 4 }, l = 0, r = l + 1;
         while (r < arr.length) {
             if (arr[l] != arr[r]) {
                 l++;
