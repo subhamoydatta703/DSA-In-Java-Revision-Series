@@ -1,6 +1,6 @@
 package revision.two_pointer_revision;
 
-public class CHeckPalindromeSentence {
+public class CheckPalindromeSentence {
     public static void main(String[] args) {
         String str ="A man a plan a canal Panama";
         int n = str.length(), l =0, r = n-1;
