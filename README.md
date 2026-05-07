@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 80 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 82 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -13,7 +13,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `recursion/` | 2 | Recursion basics and number-recursion practice. |
-| `revision/` | 32 | Rewritten or revisited versions of common interview problems, currently split into `hashmap_revision/` and `two_pointer_revision/`. |
+| `revision/` | 34 | Rewritten or revisited versions of common interview problems, currently split into `hashmap_revision/` and `two_pointer_revision/`. |
 | `two_pointers/` | 19 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, triplet sums, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes, sorted squares, distinct-value counting, and doubled-pair checks. |
 
 ## Topics Covered
@@ -98,7 +98,9 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `CheckPalindromeSentence.java` - revisits sentence palindrome validation by ignoring non-alphanumeric characters and letter case.
 - `CountDIstinctNumbers.java` - revisits counting distinct values in a sorted array.
 - `CountNumberOfUniqueElements.java` - revisits counting unique values in a sorted array.
+- `CountPairSumStrictlyGreaterThanTarget.java` - counts pairs in a sorted array whose sum is strictly greater than a target.
 - `CountPairSumStrictlyLessThanTarget.java` - counts pairs in a sorted array whose sum is strictly less than a target.
+- `DifferenceBAsedCounting.java` - counts pairs in a sorted array whose difference is less than a given value.
 - `FindCommonElements.java` - revisits finding common elements in two sorted arrays.
 - `FindFrequencyofTargetElement.java` - revisits finding the frequency of a target value in a sorted array.
 - `FindPairWhereLargerEqtoDouble.java` - revisits finding pairs where the larger value is double the smaller value.
