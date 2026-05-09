@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 84 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 85 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -14,13 +14,13 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `recursion/` | 2 | Recursion basics and number-recursion practice. |
 | `revision/` | 35 | Rewritten or revisited versions of common interview problems, currently split into `hashmap_revision/` and `two_pointer_revision/`. |
-| `two_pointers/` | 20 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, triplet sums, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes, sorted squares, distinct-value counting, and doubled-pair checks. |
+| `two_pointers/` | 21 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, container-water area, triplet sums, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes, sorted squares, distinct-value counting, and doubled-pair checks. |
 
 ## Topics Covered
 
 - Array traversal, sorting, pair sums, and subarray problems
 - Hashing with `HashMap` and `HashSet`
-- Two-pointer technique on arrays and strings, including sum and product targets
+- Two-pointer technique on arrays and strings, including sum targets, product targets, and max-area scans
 - Java collection basics
 - Recursion fundamentals
 - Loop-based and recursive pattern printing
@@ -121,6 +121,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `ChechPalindrome.java` - array palindrome check.
 - `CheckDuplicate.java` - check whether a sorted array contains duplicate values.
 - `CheckPalindromeOfASentence.java` - sentence palindrome check that ignores spaces, punctuation, and letter case.
+- `ContainerWithMostWater.java` - find the maximum water container area using two pointers.
 - `CountDiffNumExistinArr.java` - count distinct values in a sorted array.
 - `ElementsProductEqToTarget.java` - find pairs in a sorted array whose product equals a target.
 - `FindCommonElements.java` - print common elements from two sorted arrays.
