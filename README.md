@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 85 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 88 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -13,7 +13,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `recursion/` | 2 | Recursion basics and number-recursion practice. |
-| `revision/` | 35 | Rewritten or revisited versions of common interview problems, currently split into `hashmap_revision/` and `two_pointer_revision/`. |
+| `revision/` | 38 | Rewritten or revisited versions of common interview problems, currently split into `hashmap_revision/` and `two_pointer_revision/`. |
 | `two_pointers/` | 21 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, container-water area, triplet sums, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes, sorted squares, distinct-value counting, and doubled-pair checks. |
 
 ## Topics Covered
@@ -96,6 +96,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `CheckPalindromeArray.java` - checks whether an integer array is a palindrome.
 - `CheckDuplicateElements.java` - revisits checking whether a sorted array contains duplicate values.
 - `CheckPalindromeSentence.java` - revisits sentence palindrome validation by ignoring non-alphanumeric characters and letter case.
+- `ContainerWithMostWater.java` - revisits finding the maximum water container area using the two-pointer technique.
 - `CountDIstinctNumbers.java` - revisits counting distinct values in a sorted array.
 - `CountNumberOfUniqueElements.java` - revisits counting unique values in a sorted array.
 - `CountPairSumStrictlyGreaterThanTarget.java` - counts pairs in a sorted array whose sum is strictly greater than a target.
@@ -104,10 +105,12 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `FindCommonElements.java` - revisits finding common elements in two sorted arrays.
 - `FindFrequencyofTargetElement.java` - revisits finding the frequency of a target value in a sorted array.
 - `FindPairWhereLargerEqtoDouble.java` - revisits finding pairs where the larger value is double the smaller value.
+- `FindTargetElement.java` - revisits finding a target element in a sorted array using two pointers.
 - `MergeTwoSortedArray.java` - revisits merging two sorted arrays using two pointers.
 - `MinDifference.java` - revisits finding the minimum difference between adjacent elements after sorting.
 - `MoveAllZerosToEnd.java` - revisits moving all zeroes to the end while keeping non-zero values in order.
 - `MoveZerosToEnd.java` - revisits moving zeroes to the end of an array.
+- `MoveZerosToEnd2.java` - another revision of moving zeroes to the end while preserving non-zero element order.
 - `RemoveDuplicatesAndFindLength.java` - revisits removing duplicates from a sorted array and printing the new length.
 - `RemoveinstofSPecificValandReturnNewLen.java` - revisits removing all instances of a specific value in-place and tracking the new logical length.
 - `ReverseArray.java` - reverses an integer array in-place.
