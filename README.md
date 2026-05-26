@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 90 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 93 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -13,8 +13,8 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `recursion/` | 2 | Recursion basics and number-recursion practice. |
-| `revision/` | 39 | Rewritten or revisited versions of common interview problems, currently split into `hashmap_revision/` and `two_pointer_revision/`. |
-| `two_pointers/` | 22 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, container-water area, triplet sums, closest triplet sums, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes, sorted squares, distinct-value counting, and doubled-pair checks. |
+| `revision/` | 40 | Rewritten or revisited versions of common interview problems, currently split into `hashmap_revision/` and `two_pointer_revision/`. |
+| `two_pointers/` | 24 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, container-water area, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes, sorted squares, distinct-value counting, and doubled-pair checks. |
 
 ## Topics Covered
 
@@ -106,6 +106,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `FindFrequencyofTargetElement.java` - revisits finding the frequency of a target value in a sorted array.
 - `FindPairWhereLargerEqtoDouble.java` - revisits finding pairs where the larger value is double the smaller value.
 - `FindTargetElement.java` - revisits finding a target element in a sorted array using two pointers.
+- `Four_Sum_Closest.java` - revisits finding the quadruplet sum closest to a target value.
 - `MergeTwoSortedArray.java` - revisits merging two sorted arrays using two pointers.
 - `MinDifference.java` - revisits finding the minimum difference between adjacent elements after sorting.
 - `MoveAllZerosToEnd.java` - revisits moving all zeroes to the end while keeping non-zero values in order.
@@ -133,6 +134,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `FindPythagorianTriplet.java` - find Pythagorean triplets in a sorted array.
 - `FindTripletSumEqtoZero.java` - find triplet combinations whose sum is zero.
 - `FindTwoNumSumEqtoK.java` - find pairs with a target sum in a sorted array.
+- `FourSumClosest.java` - find the quadruplet sum closest to a target value after sorting the array.
 - `MinDifferenceofTwoElements.java` - find the minimum difference between adjacent elements in a sorted array.
 - `MoveAllZeroAtLastwithMaintainingOrder.java` - move all zeroes to the end while keeping non-zero values in order.
 - `RemoveDuplicatesReturnNewLen.java` - remove duplicates in-place from a sorted array and return the new length.
@@ -143,6 +145,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `StringReverse.java` - string palindrome check.
 - `ThreeSum.java` - find triplets whose sum is zero after sorting the array.
 - `ThreeSumCLosest.java` - find the triplet sum closest to a target value after sorting the array.
+- `TwoSumClosest.java` - find the pair sum closest to a target value after sorting the array.
 
 ## Prerequisites
 
