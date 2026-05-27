@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 96 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 98 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -13,14 +13,15 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `recursion/` | 2 | Recursion basics and number-recursion practice. |
-| `revision/` | 41 | Rewritten or revisited versions of common interview problems, currently split into `hashmap_revision/` and `two_pointer_revision/`. |
-| `two_pointers/` | 26 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, container-water area, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, and doubled-pair checks. |
+| `revision/` | 42 | Rewritten or revisited versions of common interview problems, currently split into `hashmap_revision/` and `two_pointer_revision/`. |
+| `two_pointers/` | 27 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, and doubled-pair checks. |
 
 ## Topics Covered
 
 - Array traversal, sorting, pair sums, and subarray problems
 - Hashing with `HashMap` and `HashSet`
 - Two-pointer technique on arrays and strings, including sum targets, product targets, and max-area scans
+- Three-pointer partitioning for Dutch National Flag style sorting
 - Greedy two-pointer pairing problems such as boats needed to save people
 - Java collection basics
 - Recursion fundamentals
@@ -104,6 +105,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `CountPairSumStrictlyGreaterThanTarget.java` - counts pairs in a sorted array whose sum is strictly greater than a target.
 - `CountPairSumStrictlyLessThanTarget.java` - counts pairs in a sorted array whose sum is strictly less than a target.
 - `DifferenceBAsedCounting.java` - counts pairs in a sorted array whose difference is less than a given value.
+- `DutchNationalFlag.java` - revisits sorting an array containing `0`, `1`, and `2` using three pointers.
 - `FindCommonElements.java` - revisits finding common elements in two sorted arrays.
 - `FindFrequencyofTargetElement.java` - revisits finding the frequency of a target value in a sorted array.
 - `FindPairWhereLargerEqtoDouble.java` - revisits finding pairs where the larger value is double the smaller value.
@@ -131,6 +133,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `CheckPalindromeOfASentence.java` - sentence palindrome check that ignores spaces, punctuation, and letter case.
 - `ContainerWithMostWater.java` - find the maximum water container area using two pointers.
 - `CountDiffNumExistinArr.java` - count distinct values in a sorted array.
+- `DutchNationalFlagProblem.java` - sort an array containing `0`, `1`, and `2` using the Dutch National Flag algorithm.
 - `ElementsProductEqToTarget.java` - find pairs in a sorted array whose product equals a target.
 - `FindCommonElements.java` - print common elements from two sorted arrays.
 - `FindFreqofTargetElement.java` - find the frequency of a target element in a sorted array by locating its first and last positions.
