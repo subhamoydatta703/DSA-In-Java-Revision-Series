@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 93 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 96 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -13,14 +13,15 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `recursion/` | 2 | Recursion basics and number-recursion practice. |
-| `revision/` | 40 | Rewritten or revisited versions of common interview problems, currently split into `hashmap_revision/` and `two_pointer_revision/`. |
-| `two_pointers/` | 24 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, container-water area, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes, sorted squares, distinct-value counting, and doubled-pair checks. |
+| `revision/` | 41 | Rewritten or revisited versions of common interview problems, currently split into `hashmap_revision/` and `two_pointer_revision/`. |
+| `two_pointers/` | 26 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, container-water area, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, and doubled-pair checks. |
 
 ## Topics Covered
 
 - Array traversal, sorting, pair sums, and subarray problems
 - Hashing with `HashMap` and `HashSet`
 - Two-pointer technique on arrays and strings, including sum targets, product targets, and max-area scans
+- Greedy two-pointer pairing problems such as boats needed to save people
 - Java collection basics
 - Recursion fundamentals
 - Loop-based and recursive pattern printing
@@ -96,6 +97,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `CheckPalindromeArray.java` - checks whether an integer array is a palindrome.
 - `CheckDuplicateElements.java` - revisits checking whether a sorted array contains duplicate values.
 - `CheckPalindromeSentence.java` - revisits sentence palindrome validation by ignoring non-alphanumeric characters and letter case.
+- `BoatToSavePeople.java` - revisits counting the minimum number of boats needed under a weight limit.
 - `ContainerWithMostWater.java` - revisits finding the maximum water container area using the two-pointer technique.
 - `CountDIstinctNumbers.java` - revisits counting distinct values in a sorted array.
 - `CountNumberOfUniqueElements.java` - revisits counting unique values in a sorted array.
@@ -123,6 +125,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 ### Two Pointers
 
 - `AllPairsSmallerisDoublethanLarger.java` - print pairs where the larger value is double the smaller value.
+- `BoatsToSavePeopleProblem.java` - count the minimum boats needed when each boat can carry at most two people within a weight limit.
 - `ChechPalindrome.java` - array palindrome check.
 - `CheckDuplicate.java` - check whether a sorted array contains duplicate values.
 - `CheckPalindromeOfASentence.java` - sentence palindrome check that ignores spaces, punctuation, and letter case.
@@ -137,6 +140,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `FourSumClosest.java` - find the quadruplet sum closest to a target value after sorting the array.
 - `MinDifferenceofTwoElements.java` - find the minimum difference between adjacent elements in a sorted array.
 - `MoveAllZeroAtLastwithMaintainingOrder.java` - move all zeroes to the end while keeping non-zero values in order.
+- `MovesOnesToTHeEndAndZerosToTheFront.java` - move zeroes to the front and ones to the end in-place.
 - `RemoveDuplicatesReturnNewLen.java` - remove duplicates in-place from a sorted array and return the new length.
 - `RemoveDuplicatesfromString.java` - remove adjacent duplicate groups from a string.
 - `ReverseArr.java` - reverse an array in-place.
