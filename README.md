@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 98 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 100 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -14,7 +14,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `recursion/` | 2 | Recursion basics and number-recursion practice. |
 | `revision/` | 42 | Rewritten or revisited versions of common interview problems, currently split into `hashmap_revision/` and `two_pointer_revision/`. |
-| `two_pointers/` | 27 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, and doubled-pair checks. |
+| `two_pointers/` | 29 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, doubled-pair checks, increasing subarray length, and mountain peak detection. |
 
 ## Topics Covered
 
@@ -141,7 +141,9 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `FindTripletSumEqtoZero.java` - find triplet combinations whose sum is zero.
 - `FindTwoNumSumEqtoK.java` - find pairs with a target sum in a sorted array.
 - `FourSumClosest.java` - find the quadruplet sum closest to a target value after sorting the array.
+- `LongestIncreasingSubArrLength.java` - find the length of the longest strictly increasing contiguous subarray.
 - `MinDifferenceofTwoElements.java` - find the minimum difference between adjacent elements in a sorted array.
+- `MountainPeakElementsFinding.java` - print peak elements that are greater than both immediate neighbors in a mountain-style array.
 - `MoveAllZeroAtLastwithMaintainingOrder.java` - move all zeroes to the end while keeping non-zero values in order.
 - `MovesOnesToTHeEndAndZerosToTheFront.java` - move zeroes to the front and ones to the end in-place.
 - `RemoveDuplicatesReturnNewLen.java` - remove duplicates in-place from a sorted array and return the new length.
