@@ -1,4 +1,4 @@
-package sliding_window;
+package sliding_window.fixed_sized_window;
 
 public class AvgSubArrOfSizeK {
     static void avg(int total, int num) {

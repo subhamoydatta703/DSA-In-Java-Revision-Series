@@ -1,4 +1,4 @@
-package sliding_window;
+package sliding_window.fixed_sized_window;
 
 public class MaxSumSubArrOfSizeK {
     public static void main(String[] args) {

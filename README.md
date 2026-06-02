@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 105 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 107 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -14,14 +14,14 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `recursion/` | 2 | Recursion basics and number-recursion practice. |
 | `revision/` | 42 | Rewritten or revisited versions of common interview problems, currently split into `hashmap_revision/` and `two_pointer_revision/`. |
-| `sliding_window/` | 4 | Fixed-size sliding-window examples for averages, maximum sums, window maximums, and first negative values. |
+| `sliding_window/` | 6 | Fixed-size sliding-window examples for averages, maximum sums, minimum sums, matching target sums, window maximums, and first negative values. |
 | `two_pointers/` | 30 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, trapping rain water, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, doubled-pair checks, increasing subarray length, and mountain peak detection. |
 
 ## Topics Covered
 
 - Array traversal, sorting, pair sums, and subarray problems
 - Hashing with `HashMap` and `HashSet`
-- Fixed-size sliding-window problems for contiguous subarray averages, maximum sums, window maximums, and first negative values
+- Fixed-size sliding-window problems for contiguous subarray averages, maximum sums, minimum sums, target-sum counting, window maximums, and first negative values
 - Two-pointer technique on arrays and strings, including sum targets, product targets, and max-area scans
 - Two-pointer water problems, including container area and trapped rain water
 - Three-pointer partitioning for Dutch National Flag style sorting
@@ -129,9 +129,13 @@ The code is organized for learning, revision, and quick experimentation rather t
 
 ### Sliding Window
 
+#### Fixed-Size Window
+
 - `AvgSubArrOfSizeK.java` - prints the average of every contiguous subarray of size `k`.
+- `FindCountOfSubArrSumEqualsToTarget.java` - counts fixed-size windows whose sum equals a target value.
 - `FindFirstNegativeInEveryWindow.java` - prints the first negative value in every window of size `k`, or reports when no negative value exists.
 - `FindMaxOfEveryWindowOfSizeK.java` - prints the maximum element in every contiguous window of size `k`.
+- `FindMinSumOfSubArrSizeK.java` - finds the minimum sum among all contiguous subarrays of size `k`.
 - `MaxSumSubArrOfSizeK.java` - finds the maximum sum among all contiguous subarrays of size `k`.
 
 ### Two Pointers
@@ -197,8 +201,8 @@ java hashing.TwoSumWithHashMap
 javac revision/hashmap_revision/GroupAnagrams.java
 java revision.hashmap_revision.GroupAnagrams
 
-javac sliding_window/AvgSubArrOfSizeK.java
-java sliding_window.AvgSubArrOfSizeK
+javac sliding_window/fixed_sized_window/AvgSubArrOfSizeK.java
+java sliding_window.fixed_sized_window.AvgSubArrOfSizeK
 
 javac two_pointers/FindTwoNumSumEqtoK.java
 java two_pointers.FindTwoNumSumEqtoK
