@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 113 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 115 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -14,7 +14,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `recursion/` | 2 | Recursion basics and number-recursion practice. |
 | `revision/` | 42 | Rewritten or revisited versions of common interview problems, currently split into `hashmap_revision/` and `two_pointer_revision/`. |
-| `sliding_window/` | 12 | Fixed-size sliding-window examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, and vowel counting. |
+| `sliding_window/` | 14 | Fixed-size and variable-size sliding-window examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, longest bounded-sum windows, and smallest threshold-sum windows. |
 | `two_pointers/` | 30 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, trapping rain water, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, doubled-pair checks, increasing subarray length, and mountain peak detection. |
 
 ## Topics Covered
@@ -22,6 +22,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - Array traversal, sorting, pair sums, and subarray problems
 - Hashing with `HashMap` and `HashSet`
 - Fixed-size sliding-window problems for contiguous subarray averages, sums, maximum sums, minimum sums, target-sum counting, window maximums, first negative values, distinct counts, frequency tracking, odd counts, and vowel counts
+- Variable-size sliding-window problems for longest bounded-sum subarrays and smallest subarrays meeting a target sum
 - Two-pointer technique on arrays and strings, including sum targets, product targets, and max-area scans
 - Two-pointer water problems, including container area and trapped rain water
 - Three-pointer partitioning for Dutch National Flag style sorting
@@ -144,6 +145,11 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `MaxNumVowelSubStrOfSizeK.java` - finds the maximum number of vowels in any substring of size `k`.
 - `MaxSumSubArrOfSizeK.java` - finds the maximum sum among all contiguous subarrays of size `k`.
 
+#### Variable-Size Window
+
+- `LongestSubArrWithSumLessEqualToK.java` - finds the longest contiguous subarray whose sum is less than or equal to `k`.
+- `SmallestSubArrWithSumGreaterEqualToK.java` - finds the smallest contiguous subarray whose sum is greater than or equal to `k`.
+
 ### Two Pointers
 
 - `AllPairsSmallerisDoublethanLarger.java` - print pairs where the larger value is double the smaller value.
@@ -209,6 +215,9 @@ java revision.hashmap_revision.GroupAnagrams
 
 javac sliding_window/fixed_sized_window/AvgSubArrOfSizeK.java
 java sliding_window.fixed_sized_window.AvgSubArrOfSizeK
+
+javac sliding_window/variable_sized_window/SmallestSubArrWithSumGreaterEqualToK.java
+java sliding_window.variable_sized_window.SmallestSubArrWithSumGreaterEqualToK
 
 javac two_pointers/FindTwoNumSumEqtoK.java
 java two_pointers.FindTwoNumSumEqtoK
