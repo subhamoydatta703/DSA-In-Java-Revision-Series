@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 116 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 118 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -14,7 +14,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `recursion/` | 2 | Recursion basics and number-recursion practice. |
 | `revision/` | 42 | Rewritten or revisited versions of common interview problems, currently split into `hashmap_revision/` and `two_pointer_revision/`. |
-| `sliding_window/` | 15 | Fixed-size and variable-size sliding-window examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, longest bounded-sum windows, smallest threshold-sum windows, and longest windows with at most `k` distinct elements. |
+| `sliding_window/` | 17 | Fixed-size and variable-size sliding-window examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, longest bounded-sum windows, smallest threshold-sum windows, longest windows with at most `k` distinct elements, and non-repeating substring problems. |
 | `two_pointers/` | 30 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, trapping rain water, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, doubled-pair checks, increasing subarray length, and mountain peak detection. |
 
 ## Topics Covered
@@ -22,7 +22,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - Array traversal, sorting, pair sums, and subarray problems
 - Hashing with `HashMap` and `HashSet`
 - Fixed-size sliding-window problems for contiguous subarray averages, sums, maximum sums, minimum sums, target-sum counting, window maximums, first negative values, distinct counts, frequency tracking, odd counts, and vowel counts
-- Variable-size sliding-window problems for longest bounded-sum subarrays, smallest subarrays meeting a target sum, and longest subarrays with at most `k` distinct elements
+- Variable-size sliding-window problems for longest bounded-sum subarrays, smallest subarrays meeting a target sum, longest subarrays with at most `k` distinct elements, and substrings without repeating characters
 - Two-pointer technique on arrays and strings, including sum targets, product targets, and max-area scans
 - Two-pointer water problems, including container area and trapped rain water
 - Three-pointer partitioning for Dutch National Flag style sorting
@@ -147,8 +147,10 @@ The code is organized for learning, revision, and quick experimentation rather t
 
 #### Variable-Size Window
 
+- `FindMaxSubStrWithoutRepeatingChar.java` - prints the longest substring without repeating characters.
 - `LongestSubArrWithAtMost2DistElements.java` - finds the longest contiguous subarray with at most two distinct elements.
 - `LongestSubArrWithSumLessEqualToK.java` - finds the longest contiguous subarray whose sum is less than or equal to `k`.
+- `LongestSubStrLenWithoutRepeatingChar.java` - finds the length of the longest substring without repeating characters.
 - `SmallestSubArrWithSumGreaterEqualToK.java` - finds the smallest contiguous subarray whose sum is greater than or equal to `k`.
 
 ### Two Pointers
