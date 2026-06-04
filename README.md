@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 118 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 120 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -13,7 +13,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `recursion/` | 2 | Recursion basics and number-recursion practice. |
-| `revision/` | 42 | Rewritten or revisited versions of common interview problems, currently split into `hashmap_revision/` and `two_pointer_revision/`. |
+| `revision/` | 44 | Rewritten or revisited versions of common interview problems, currently split into hashmap, sliding-window, and two-pointer revision folders. |
 | `sliding_window/` | 17 | Fixed-size and variable-size sliding-window examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, longest bounded-sum windows, smallest threshold-sum windows, longest windows with at most `k` distinct elements, and non-repeating substring problems. |
 | `two_pointers/` | 30 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, trapping rain water, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, doubled-pair checks, increasing subarray length, and mountain peak detection. |
 
@@ -23,6 +23,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - Hashing with `HashMap` and `HashSet`
 - Fixed-size sliding-window problems for contiguous subarray averages, sums, maximum sums, minimum sums, target-sum counting, window maximums, first negative values, distinct counts, frequency tracking, odd counts, and vowel counts
 - Variable-size sliding-window problems for longest bounded-sum subarrays, smallest subarrays meeting a target sum, longest subarrays with at most `k` distinct elements, and substrings without repeating characters
+- Revision sliding-window problems for fixed-size maximum and minimum subarray sums
 - Two-pointer technique on arrays and strings, including sum targets, product targets, and max-area scans
 - Two-pointer water problems, including container area and trapped rain water
 - Three-pointer partitioning for Dutch National Flag style sorting
@@ -96,6 +97,13 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `TwoSum.java` - revisits two-sum using hashing.
 - `UnionofArr.java` - revisits array union.
 - `ZeroSumSubarrayRevision.java` - another zero-sum subarray revision.
+
+#### Sliding Window Revision
+
+##### Fixed-Size Window
+
+- `MaxSumSubArrOfSizeK.java` - revisits finding the maximum sum among all contiguous subarrays of size `k`.
+- `MinSumSubArrOfSizeK.java` - revisits finding the minimum sum among all contiguous subarrays of size `k`.
 
 #### Two-Pointer Revision
 
@@ -215,6 +223,9 @@ java hashing.TwoSumWithHashMap
 
 javac revision/hashmap_revision/GroupAnagrams.java
 java revision.hashmap_revision.GroupAnagrams
+
+javac revision/sliding_window/fixed_sized_window/MinSumSubArrOfSizeK.java
+java revision.sliding_window.fixed_sized_window.MinSumSubArrOfSizeK
 
 javac sliding_window/fixed_sized_window/AvgSubArrOfSizeK.java
 java sliding_window.fixed_sized_window.AvgSubArrOfSizeK
