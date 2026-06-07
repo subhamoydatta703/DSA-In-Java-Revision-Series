@@ -23,7 +23,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - Hashing with `HashMap` and `HashSet`
 - Fixed-size sliding-window problems for contiguous subarray averages, sums, maximum sums, minimum sums, target-sum counting, window maximums, first negative values, distinct counts, frequency tracking, odd counts, and vowel counts
 - Variable-size sliding-window problems for longest bounded-sum subarrays, smallest subarrays meeting a target sum, longest subarrays with at most `k` distinct elements, and substrings without repeating characters
-- Revision sliding-window problems for fixed-size averages, maximum and minimum subarray sums, odd counts, and maximum and minimum vowel counts in substrings of size `k`
+- Revision sliding-window problems for fixed-size averages, maximum and minimum subarray sums, odd counts, maximum and minimum vowel counts in substrings of size `k`, and variable-size longest bounded-sum subarrays and non-repeating substrings
 - Two-pointer technique on arrays and strings, including sum targets, product targets, and max-area scans
 - Two-pointer water problems, including container area and trapped rain water
 - Three-pointer partitioning for Dutch National Flag style sorting
@@ -241,6 +241,9 @@ java revision.sliding_window.fixed_sized_window.MinNumOfVowelInSubStrOfSizeK
 
 javac revision/sliding_window/fixed_sized_window/CountOddNumInWindowOfSizeK.java
 java revision.sliding_window.fixed_sized_window.CountOddNumInWindowOfSizeK
+
+javac revision/sliding_window/variable_sized_window/LongestSubArrSumLessEqToK.java
+java revision.sliding_window.variable_sized_window.LongestSubArrSumLessEqToK
 
 javac sliding_window/fixed_sized_window/AvgSubArrOfSizeK.java
 java sliding_window.fixed_sized_window.AvgSubArrOfSizeK
