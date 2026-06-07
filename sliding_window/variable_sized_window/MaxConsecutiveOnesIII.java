@@ -1,4 +1,4 @@
-package revision.sliding_window.variable_sized_window;
+package sliding_window.variable_sized_window;
 
 public class MaxConsecutiveOnesIII {
     // Find the maximum length subarray containing at most k zeros
