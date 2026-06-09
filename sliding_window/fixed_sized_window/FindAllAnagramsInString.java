@@ -16,7 +16,7 @@ public class FindAllAnagramsInString {
             if (targetmap.containsKey(s.charAt(r)) && targetmap.get(s.charAt(r)).equals(windMap.get(s.charAt(r)))) {
                 count++;
             }
-            while ((r - l + 1) == k) {
+            if ((r - l + 1) == k) {
                 if(count==targetmap.size()){ idx=l; System.out.println(idx+" ");}
                 if (targetmap.containsKey(s.charAt(l)) && targetmap.get(s.charAt(l)).equals(windMap.get(s.charAt(l)))) {
                     count--;
