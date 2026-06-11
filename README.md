@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 135 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 136 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -15,7 +15,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `prefixsum/` | 1 | Prefix sum logic for subarray sums. |
 | `recursion/` | 2 | Recursion basics and number-recursion practice. |
 | `revision/` | 52 | Rewritten or revisited versions of common interview problems, currently split into hashmap_revision, sliding_window, and two_pointer_revision folders. |
-| `sliding_window/` | 23 | Fixed-size and variable-size sliding-window examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, all anagrams in a string, longest bounded-sum windows, smallest threshold-sum windows, longest windows with at most `k` distinct elements, max consecutive ones with flips, minimum window substring, subarray product limits, non-repeating substring, and equal 0s and 1s substring problems. |
+| `sliding_window/` | 24 | Fixed-size and variable-size examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, all anagrams in a string, longest bounded-sum windows, smallest threshold-sum windows, longest windows with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, subarray product limits, non-repeating substring, and equal 0s and 1s substring problems. |
 | `two_pointers/` | 30 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, trapping rain water, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, doubled-pair checks, increasing subarray length, and mountain peak detection. |
 
 ## Topics Covered
@@ -23,7 +23,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - Array traversal, sorting, pair sums, and subarray problems
 - Hashing with `HashMap` and `HashSet`
 - Fixed-size sliding-window problems for contiguous subarray averages, sums, maximum sums, minimum sums, target-sum counting, window maximums, first negative values, distinct counts, frequency tracking, odd counts, vowel counts, and finding all anagrams in a string
-- Variable-size sliding-window problems for longest bounded-sum subarrays, smallest subarrays meeting a target sum, longest subarrays with at most `k` distinct elements, max consecutive ones with flips, minimum window substring, counting subarrays with product less than `k`, substrings without repeating characters, and substrings with equal 0s and 1s
+- Variable-size sliding-window problems for longest bounded-sum subarrays, smallest subarrays meeting a target sum, longest subarrays with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, counting subarrays with product less than `k`, substrings without repeating characters, and substrings with equal 0s and 1s
 - Prefix sum algorithms (e.g., longest subarray with sum equal to `k`)
 - Revision sliding-window problems for fixed-size averages, maximum and minimum subarray sums, odd counts, maximum and minimum vowel counts in substrings of size `k`, all anagrams in a string, longest bounded-sum windows, substrings without repeating characters, and max consecutive ones with flips
 - Two-pointer technique on arrays and strings, including sum targets, product targets, and max-area scans
@@ -176,6 +176,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `CountSubarraysWithProductLessThanK.java` - finds the number of contiguous subarrays whose product is strictly less than `k`.
 - `FindMaxSubStrWithoutRepeatingChar.java` - prints the longest substring without repeating characters.
 - `FindMinimumWindowSubstring.java` - finds the minimum window substring containing all characters of another string.
+- `LongestRepeatingCharacterReplacement.java` - finds the length of the longest substring containing the same letter after replacing at most `k` characters.
 - `LongestSubArrWithAtMost2DistElements.java` - finds the longest contiguous subarray with at most two distinct elements.
 - `LongestSubArrWithSumLessEqualToK.java` - finds the longest contiguous subarray whose sum is less than or equal to `k`.
 - `LongestSubStrLenWithoutRepeatingChar.java` - finds the length of the longest substring without repeating characters.
