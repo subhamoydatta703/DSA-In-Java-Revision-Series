@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 138 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 139 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -12,10 +12,10 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `collections/` | 2 | Basic Java `Queue` and `Stack` examples. |
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
-| `prefixsum/` | 1 | Prefix sum logic for subarray sums. |
+| `prefixsum/` | 1 | Range sum queries and prefix sum logics. |
 | `recursion/` | 2 | Recursion basics and number-recursion practice. |
 | `revision/` | 52 | Rewritten or revisited versions of common interview problems, currently split into hashmap_revision, sliding_window, and two_pointer_revision folders. |
-| `sliding_window/` | 26 | Fixed-size and variable-size examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, all anagrams in a string, permutation in a string, longest bounded-sum windows, smallest threshold-sum windows, longest windows with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, subarray product limits, non-repeating substring, fruits into basket, and equal 0s and 1s substring problems. |
+| `sliding_window/` | 27 | Fixed-size and variable-size examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, all anagrams in a string, permutation in a string, longest bounded-sum windows, smallest threshold-sum windows, longest windows with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, subarray product limits, non-repeating substring, fruits into basket, longest subarray with sum equal to k, and equal 0s and 1s substring problems. |
 | `two_pointers/` | 30 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, trapping rain water, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, doubled-pair checks, increasing subarray length, and mountain peak detection. |
 
 ## Topics Covered
@@ -78,7 +78,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 
 ### Prefix Sum
 
-- `LongestSubArrSumEqToK.java` - finds the length of the longest subarray with sum equal to `k` using prefix sum logic.
+- `RangeSumQueries.java` - computes sum of elements in a given range of an array using prefix sum.
 
 ### Recursion
 
@@ -179,6 +179,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `FindMinimumWindowSubstring.java` - finds the minimum window substring containing all characters of another string.
 - `FruitsIntoBasket.java` - finds the length of the longest subarray with at most `k` distinct elements (representing fruit types in baskets).
 - `LongestRepeatingCharacterReplacement.java` - finds the length of the longest substring containing the same letter after replacing at most `k` characters.
+- `LongestSubArrSumEqToK.java` - finds the longest subarray with sum equal to `k` using variable-sized sliding window.
 - `LongestSubArrWithAtMost2DistElements.java` - finds the longest contiguous subarray with at most two distinct elements.
 - `LongestSubArrWithSumLessEqualToK.java` - finds the longest contiguous subarray whose sum is less than or equal to `k`.
 - `LongestSubStrLenWithoutRepeatingChar.java` - finds the length of the longest substring without repeating characters.

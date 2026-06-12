@@ -1,4 +1,4 @@
-package prefixsum;
+package sliding_window.variable_sized_window;
 
 public class LongestSubArrSumEqToK {
     public static void main(String[] args) {
