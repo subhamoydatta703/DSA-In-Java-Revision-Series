@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 142 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 144 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -12,7 +12,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `collections/` | 2 | Basic Java `Queue` and `Stack` examples. |
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
-| `prefixsum/` | 4 | Range sum queries, equilibrium index, subarray sums multiple of k, and prefix sum logics. |
+| `prefixsum/` | 6 | Range sum queries, equilibrium index, subarray sums, window maximums, and prefix sum logics. |
 | `recursion/` | 2 | Recursion basics and number-recursion practice. |
 | `revision/` | 52 | Rewritten or revisited versions of common interview problems, currently split into hashmap_revision, sliding_window, and two_pointer_revision folders. |
 | `sliding_window/` | 27 | Fixed-size and variable-size examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, all anagrams in a string, permutation in a string, longest bounded-sum windows, smallest threshold-sum windows, longest windows with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, subarray product limits, non-repeating substring, fruits into basket, longest subarray with sum equal to k, and equal 0s and 1s substring problems. |
@@ -78,7 +78,9 @@ The code is organized for learning, revision, and quick experimentation rather t
 
 ### Prefix Sum
 
+- `CountSubArrSumUsingPrefixSum.java` - counts subarrays whose sum equals a target value using prefix sum range query calculations.
 - `FindEquilibriumIndex.java` - finds the equilibrium index of an array where the sum of elements at lower indices is equal to the sum of elements at higher indices.
+- `MaxSubArrSumOfWindowSizeK.java` - finds the maximum subarray sum of a fixed window size `k` using running cumulative sums.
 - `NumOfSubArrSumEqToK.java` - counts the number of subarrays with sum equal to `k` using prefix sum and a hash map.
 - `RangeSumQueries.java` - computes sum of elements in a given range of an array using prefix sum.
 - `SubarraySumMultipleOfK.java` - checks if there is any subarray whose sum is a multiple of `k` and length is at least 2.
