@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 152 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 154 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -14,7 +14,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `prefixsum/` | 6 | Range sum queries, equilibrium index, subarray sums, window maximums, and prefix sum logics. |
 | `recursion/` | 2 | Recursion basics and number-recursion practice. |
-| `revision/` | 60 | Rewritten or revisited versions of common interview problems, currently split into hashmap_revision, prefixsum, sliding_window, and two_pointer_revision folders. |
+| `revision/` | 62 | Rewritten or revisited versions of common interview problems, currently split into hashmap_revision, prefixsum, sliding_window, and two_pointer_revision folders. |
 | `sliding_window/` | 27 | Fixed-size and variable-size examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, all anagrams in a string, permutation in a string, longest bounded-sum windows, smallest threshold-sum windows, longest windows with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, subarray product limits, non-repeating substring, fruits into basket, longest subarray with sum equal to k, and equal 0s and 1s substring problems. |
 | `two_pointers/` | 30 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, trapping rain water, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, doubled-pair checks, increasing subarray length, and mountain peak detection.
 
@@ -25,7 +25,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - Fixed-size sliding-window problems for contiguous subarray averages, sums, maximum sums, minimum sums, target-sum counting, window maximums, first negative values, distinct counts, frequency tracking, odd counts, vowel counts, finding all anagrams in a string, and checking for a permutation of a string inside another string
 - Variable-size sliding-window problems for longest bounded-sum subarrays, smallest subarrays meeting a target sum, longest subarrays with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, counting subarrays with product less than `k`, substrings without repeating characters, and substrings with equal 0s and 1s
 - Prefix sum algorithms (e.g., longest subarray with sum equal to `k`)
-- Revision sliding-window problems for fixed-size averages, maximum and minimum subarray sums, odd counts, maximum and minimum vowel counts in substrings of size `k`, all anagrams in a string, longest bounded-sum windows, substrings without repeating characters, and max consecutive ones with flips
+- Revision sliding-window problems for fixed-size averages, maximum and minimum subarray sums, odd counts, maximum and minimum vowel counts in substrings of size `k`, all anagrams in a string, longest bounded-sum windows, substrings without repeating characters, max consecutive ones with flips, longest repeating character replacement, and smallest target-sum windows
 - Two-pointer technique on arrays and strings, including sum targets, product targets, and max-area scans
 - Two-pointer water problems, including container area and trapped rain water
 - Three-pointer partitioning for Dutch National Flag style sorting
@@ -128,15 +128,17 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `MinNumOfVowelInSubStrOfSizeK.java` - revisits finding the minimum number of vowels in any substring of size `k`.
 - `MinSumSubArrOfSizeK.java` - revisits finding the minimum sum among all contiguous subarrays of size `k`.
 
-##### Variable-Size Window (7)
+##### Variable-Size Window (9)
 
+- `LongestRepeatingCharacterReplacement.java` - revisits finding the length of the longest substring containing the same letter after replacing at most `k` characters.
 - `LongestSubArrSumLessEqToK.java` - revisits finding the longest contiguous subarray whose sum is less than or equal to `k`.
-- `LongestSubArrSunLessEqToK_revision.java` - another revision of finding the longest contiguous subarray whose sum is less than or equal to `k`.
+- `LongestSubArrSumLessEqToK_revision.java` - another revision of finding the longest contiguous subarray whose sum is less than or equal to `k`.
 - `LongestSubStrWithAtMostKDistChar.java` - revisits finding the longest substring with at most `k` distinct characters.
 - `LongestSubStrWithoutRepeatingChar.java` - revisits finding the longest substring without repeating characters.
 - `LongestSubStrWithoutRepeatingChar_rev.java` - another revision of finding the longest substring without repeating characters.
 - `MaxConsecutiveOnesIII.java` - revisits finding the maximum number of consecutive ones in a binary array if you can flip at most `k` zeroes.
 - `MaxConsecutiveOnesIII_rev.java` - another revision of finding the maximum number of consecutive ones in a binary array if you can flip at most `k` zeroes.
+- `SmallestSubArrWithSumGreaterEqToK.java` - revisits finding the smallest contiguous subarray whose sum is greater than or equal to `k`.
 
 #### Two-Pointer Revision (28)
 

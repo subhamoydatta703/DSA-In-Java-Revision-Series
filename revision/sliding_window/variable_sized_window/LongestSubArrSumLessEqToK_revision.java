@@ -1,6 +1,6 @@
 package revision.sliding_window.variable_sized_window;
 
-public class LongestSubArrSunLessEqToK_revision {
+public class LongestSubArrSumLessEqToK_revision {
     public static void main(String[] args) {
         int arr[] = { 3, 1, 2, 1, 4, 1, 3 }, k = 6;
         int n = arr.length, l = 0, r = 0, sum = 0, max = 0;
