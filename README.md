@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 159 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 161 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -9,7 +9,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | Folder | Files | Contents |
 | --- | ---: | --- |
 | `arrays/` | 5 | Array input, sorting, pair-sum practice, subarray sum, subarray product, and Codeforces-style array examples. |
-| `binarysearch/` | 3 | Binary search examples for target lookup, insert position, and finding the first occurrence of a target. |
+| `binarysearch/` | 5 | Binary search examples for target lookup, insert position, and finding first, last, or both occurrences of a target. |
 | `collections/` | 2 | Basic Java `Queue` and `Stack` examples. |
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
@@ -22,7 +22,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 ## Topics Covered
 
 - Array traversal, sorting, pair sums, and subarray problems
-- Binary search for direct target lookup, insert position, and finding the first occurrence of a target
+- Binary search for direct target lookup, insert position, and finding first, last, or both occurrences of a target
 - Hashing with `HashMap` and `HashSet`
 - Fixed-size sliding-window problems for contiguous subarray averages, sums, maximum sums, minimum sums, target-sum counting, window maximums, first negative values, distinct counts, frequency tracking, odd counts, vowel counts, finding all anagrams in a string, and checking for a permutation of a string inside another string
 - Variable-size sliding-window problems for longest bounded-sum subarrays, smallest subarrays meeting a target sum, longest subarrays with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, counting subarrays with product less than `k`, substrings without repeating characters, and substrings with equal 0s and 1s
@@ -49,7 +49,9 @@ The code is organized for learning, revision, and quick experimentation rather t
 
 ### Binary Search
 
+- `FindFirstAndLastOccurance.java` - finds both the first and last occurrences of a target element in a sorted array using binary search.
 - `FindFirstOccurence.java` - finds the first occurrence of a target element in a sorted array using binary search.
+- `FindLastOccurence.java` - finds the last occurrence of a target element in a sorted array using binary search.
 - `FindTheTargetElementInArr.java` - finds a target in a sorted array using binary search.
 - `SearchInsertPosition.java` - returns the index where a target exists or should be inserted.
 

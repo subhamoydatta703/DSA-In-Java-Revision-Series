@@ -10,7 +10,7 @@ public class FindFirstOccurence {
                 e = m - 1;
             }
 
-            if (arr[m] < t) {
+            else if (arr[m] < t) {
                 s = m + 1;
             } else {
                 e = m - 1;
@@ -26,4 +26,3 @@ public class FindFirstOccurence {
     }
 
 }
-// }
