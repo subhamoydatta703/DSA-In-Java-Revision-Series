@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 156 small, focused programs grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 160 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root, although a couple of files in `binarysearch/` are still draft/commented examples.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -9,6 +9,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | Folder | Files | Contents |
 | --- | ---: | --- |
 | `arrays/` | 5 | Array input, sorting, pair-sum practice, subarray sum, subarray product, and Codeforces-style array examples. |
+| `binarysearch/` | 4 | Binary search examples for target lookup and insert position, plus two draft/commented files for first/last position and single-element search. |
 | `collections/` | 2 | Basic Java `Queue` and `Stack` examples. |
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
@@ -16,11 +17,12 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `recursion/` | 2 | Recursion basics and number-recursion practice. |
 | `revision/` | 64 | Rewritten or revisited versions of common interview problems, currently split into hashmap_revision, prefixsum, sliding_window, and two_pointer_revision folders. |
 | `sliding_window/` | 27 | Fixed-size and variable-size examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, all anagrams in a string, permutation in a string, longest bounded-sum windows, smallest threshold-sum windows, longest windows with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, subarray product limits, non-repeating substring, fruits into basket, longest subarray with sum equal to k, and equal 0s and 1s substring problems. |
-| `two_pointers/` | 30 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, trapping rain water, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, doubled-pair checks, increasing subarray length, and mountain peak detection.
+| `two_pointers/` | 30 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, trapping rain water, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, doubled-pair checks, increasing subarray length, and mountain peak detection. |
 
 ## Topics Covered
 
 - Array traversal, sorting, pair sums, and subarray problems
+- Binary search for direct target lookup and insert-position style problems
 - Hashing with `HashMap` and `HashSet`
 - Fixed-size sliding-window problems for contiguous subarray averages, sums, maximum sums, minimum sums, target-sum counting, window maximums, first negative values, distinct counts, frequency tracking, odd counts, vowel counts, finding all anagrams in a string, and checking for a permutation of a string inside another string
 - Variable-size sliding-window problems for longest bounded-sum subarrays, smallest subarrays meeting a target sum, longest subarrays with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, counting subarrays with product less than `k`, substrings without repeating characters, and substrings with equal 0s and 1s
@@ -44,6 +46,13 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `RCB_Problem_CodeForce.java` - Codeforces-style array practice that prints valid center-out element pairs.
 - `SubarrayProductPractice.java` - subarray product counting experiments.
 - `SubarraySumPractice.java` - prefix-sum based subarray sum counting.
+
+### Binary Search
+
+- `FindTheTargetElementInArr.java` - finds a target in a sorted array using binary search.
+- `SearchInsertPosition.java` - returns the index where a target exists or should be inserted.
+- `FirstAndLastPosOfElementInSortedArr.java` - draft/commented example for finding the first and last positions of a target.
+- `FindSingleElementInSortedArr.java` - draft/commented example for a single-element search problem.
 
 ### Collections
 
@@ -260,6 +269,9 @@ Run commands from the repository root. The source files use Java packages, so co
 ```bash
 javac arrays/ArrayInputSortPractice.java
 java arrays.ArrayInputSortPractice
+
+javac binarysearch/FindTheTargetElementInArr.java
+java binarysearch.FindTheTargetElementInArr
 ```
 
 More examples:
@@ -286,11 +298,14 @@ java sliding_window.fixed_sized_window.AvgSubArrOfSizeK
 javac sliding_window/variable_sized_window/SmallestSubArrWithSumGreaterEqualToK.java
 java sliding_window.variable_sized_window.SmallestSubArrWithSumGreaterEqualToK
 
+javac revision/sliding_window/variable_sized_window/MinWindowSubStr.java
+java revision.sliding_window.variable_sized_window.MinWindowSubStr
+
 javac two_pointers/FindTwoNumSumEqtoK.java
 java two_pointers.FindTwoNumSumEqtoK
 
-javac prefixsum/LongestSubArrSumEqToK.java
-java prefixsum.LongestSubArrSumEqToK
+javac prefixsum/NumOfSubArrSumEqToK.java
+java prefixsum.NumOfSubArrSumEqToK
 ```
 
 For files that read from standard input, type the expected values after running the program. For example, `arrays/ArrayInputSortPractice.java` expects the array size first, followed by the array elements.
@@ -327,6 +342,7 @@ java -cp out two_pointers.ReverseArr
 ## Notes
 
 - Package names should match folder names. For example, files in `two_pointers/` should start with `package two_pointers;`.
+- Package names should match folder names. For example, files in `binarysearch/` should start with `package binarysearch;`.
 - Java class names and file names must match exactly. For example, `two_pointers/ChechPalindrome.java` runs as `java two_pointers.ChechPalindrome`.
 - Generated `.class` files are build output and should not be committed.
 - Some files are experimental practice snippets, so output formatting and edge-case handling may vary by file.
