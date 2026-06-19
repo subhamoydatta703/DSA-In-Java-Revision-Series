@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 168 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 170 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -9,7 +9,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | Folder | Files | Contents |
 | --- | ---: | --- |
 | `arrays/` | 5 | Array input, sorting, pair-sum practice, subarray sum, subarray product, and Codeforces-style array examples. |
-| `binarysearch/` | 12 | Binary search examples for target lookup, insert position, finding first/last occurrences of a target, rotated sorted array searches (with or without duplicates, finding minimum/maximum elements, and finding the number of rotations), as well as finding lower/upper bounds (largest element less than or equal to target, and minimum element greater than or equal to target). |
+| `binarysearch/` | 14 | Binary search examples for target lookup, insert position, finding first/last occurrences of a target, rotated sorted array searches (with or without duplicates, finding minimum/maximum/peak elements, and finding the number of rotations), finding lower/upper bounds, and finding the floor square root of an integer. |
 | `collections/` | 2 | Basic Java `Queue` and `Stack` examples. |
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
@@ -22,7 +22,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 ## Topics Covered
 
 - Array traversal, sorting, pair sums, and subarray problems
-- Binary search for direct target lookup, insert position, finding first, last, or both occurrences of a target, rotated sorted array search (with or without duplicates), finding minimum/maximum elements in rotated sorted arrays, finding the number of rotations, and finding bounds (largest less/equal and minimum greater/equal elements)
+- Binary search for direct target lookup, insert position, finding first, last, or both occurrences of a target, rotated sorted array search (with or without duplicates), finding minimum/maximum/peak elements in rotated sorted arrays, finding the number of rotations, finding bounds (largest less/equal and minimum greater/equal elements), and finding the floor square root of an integer
 - Hashing with `HashMap` and `HashSet`
 - Fixed-size sliding-window problems for contiguous subarray averages, sums, maximum sums, minimum sums, target-sum counting, window maximums, first negative values, distinct counts, frequency tracking, odd counts, vowel counts, finding all anagrams in a string, and checking for a permutation of a string inside another string
 - Variable-size sliding-window problems for longest bounded-sum subarrays, smallest subarrays meeting a target sum, longest subarrays with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, counting subarrays with product less than `k`, substrings without repeating characters, and substrings with equal 0s and 1s
@@ -56,10 +56,12 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `FIndMaxInRotatedArr.java` - finds the maximum element in a rotated sorted array using binary search.
 - `FIndMInInRotatedArr.java` - finds the minimum element in a rotated sorted array using binary search.
 - `FindNumberOfRotationsInArr.java` - finds the number of rotations in a rotated sorted array using binary search.
+- `FindPeakElementInRotatedArr.java` - finds the peak element in a rotated sorted array using binary search.
 - `FindTargetElementInRotatedArr.java` - finds a target element in a rotated sorted array using binary search.
 - `FindTargetElementInRotatedArrII.java` - finds a target element in a rotated sorted array that may contain duplicates using binary search.
 - `FindTheMinElementGreaterEqToTarget.java` - finds the index of the minimum element greater than or equal to a target element in a sorted array using binary search.
 - `FindTheTargetElementInArr.java` - finds a target in a sorted array using binary search.
+- `FloorSqrtProblem.java` - finds the floor square root of an integer using binary search.
 - `SearchInsertPosition.java` - returns the index where a target exists or should be inserted.
 
 ### Collections
