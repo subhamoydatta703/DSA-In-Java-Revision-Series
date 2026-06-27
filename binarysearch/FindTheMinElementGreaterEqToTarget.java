@@ -12,12 +12,12 @@ public class FindTheMinElementGreaterEqToTarget {
                 l = m + 1;
             }
         }
-        return (min == Integer.MAX_VALUE) ? -1 : min;
+        return (min == Integer.MAX_VALUE) ? -1 : arr[min];
     }
 
     public static void main(String[] args) {
-        // int arr[] = { 1, 3, 5, 7, 9 }, t = 6;
-        int arr[] = { 1, 2, 7, 10, 15, 16, 17 }, t = 20;
+        int arr[] = { 1, 3, 5, 7, 9 }, t = 6;
+        // int arr[] = { 1, 2, 7, 10, 15, 16, 17 }, t = 20;
         System.out.println(findMinElmGrtEqTgt(arr, t));
     }
 
