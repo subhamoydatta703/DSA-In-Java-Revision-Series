@@ -154,7 +154,7 @@ public class RecursionBasics {
         // NtoO(15);
         // OtoN(5);
         // System.out.println(sumN(5));
-        // System.out.println(dig(123));
+        System.out.println(dig(123));
         // System.out.println(revNum(123, 0));
         // System.out.println(isPalindrome(125));
         // fizzBuzz();
@@ -166,7 +166,7 @@ public class RecursionBasics {
         // System.out.println(isRotated("JavaScript", "ScriptJava"));
         int[] arr = { 3, 1, 2, 5 };
         // System.out.println(minArrVal(arr, 0, arr[0]));
-        System.out.println(secMinArrVal(arr, 0, arr[0], arr[1]));
+        // System.out.println(secMinArrVal(arr, 0, arr[0], arr[1]));
 
     }
 }

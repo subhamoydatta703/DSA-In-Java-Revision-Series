@@ -87,6 +87,11 @@ public class RecursiveNumberPractice {
         // return count;
     }
 
+    static int fac(int n ){
+        if(n ==0 || n==1) return 1;
+        return n * fac(n-1);
+    }
+
     static int countSteps(int n, int steps) {
         if (n == 0)
             return steps == 0 ? 1 : steps;
@@ -98,26 +103,27 @@ public class RecursiveNumberPractice {
     }
 
     public static void main(String[] args) {
-        nTo1(5);
-        System.out.println("..............");
-        oneTn(5);
-        System.out.println("..............");
-        System.out.println(pdt(5));
-        System.out.println("..............");
-        System.out.println(sumDig(123));
-        System.out.println("..............");
-        System.out.println(pdtDig(326));
-        System.out.println("..............");
-        // revNum(120300);
-        System.out.println("..............");
-        // rev(123450);
-        System.out.println(rev(123450, 0));
-        System.out.println("..............");
-        System.out.println(isPalindrome(123));
-        System.out.println("..............");
-        System.out.println(countZero(120056, 0));
-        System.out.println("..............");
-        System.out.println(countSteps(123, 0));
-
-    }
+        // nTo1(5);
+        // System.out.println("..............");
+        // oneTn(5);
+        // System.out.println("..............");
+        // System.out.println(pdt(5));
+        // System.out.println("..............");
+        // System.out.println(sumDig(123));
+        // System.out.println("..............");
+        // System.out.println(pdtDig(326));
+        // System.out.println("..............");
+        // // revNum(120300);
+        // System.out.println("..............");
+        // // rev(123450);
+        // System.out.println(rev(123450, 0));
+        // System.out.println("..............");
+        // System.out.println(isPalindrome(123));
+        // System.out.println("..............");
+        // System.out.println(countZero(120056, 0));
+        // System.out.println("..............");
+        // System.out.println(countSteps(123, 0));
+        
+System.out.println(fac(3));    
+}
 }
