@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 198 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 199 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -14,7 +14,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `prefixsum/` | 6 | Range sum queries, equilibrium index, subarray sums, window maximums, and prefix sum logics. |
-| `recursion/` | 17 | Recursion basics, number-recursion practice, and basic/intermediate recursion exercises (factorial, Fibonacci, palindrome, digit counting, summing, reversing, array operations, and printing). |
+| `recursion/` | 18 | Recursion basics, number-recursion practice, and basic/intermediate recursion exercises (factorial, Fibonacci, palindrome, digit counting, summing, reversing, array operations, and printing). |
 | `revision/` | 74 | Rewritten or revisited versions of common interview problems, currently split into binarysearch, hashmap_revision, prefixsum, sliding_window, and two_pointer_revision folders. |
 | `sliding_window/` | 27 | Fixed-size and variable-size examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, all anagrams in a string, permutation in a string, longest bounded-sum windows, smallest threshold-sum windows, longest windows with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, subarray product limits, non-repeating substring, fruits into basket, longest subarray with sum equal to k, and equal 0s and 1s substring problems. |
 | `two_pointers/` | 30 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, trapping rain water, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, doubled-pair checks, increasing subarray length, and mountain peak detection. |
@@ -124,13 +124,14 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `ReverseANumber.java` - reverses a number using recursion.
 - `SumOfNumbers.java` - calculates the sum of first N natural numbers.
 
-#### Basic Intermediate (7)
+#### Basic Intermediate (8)
 
 - `BinarySearch.java` - performs binary search recursively.
 - `BinarySearchInRotatedSortedArr.java` - performs binary search on a rotated sorted array recursively.
 - `CheckingSortedArray.java` - checks if an array is sorted using recursion.
 - `FIndMaxElementInArray.java` - finds the maximum element in an array using recursion.
 - `PalindromeCheckingOfAString.java` - checks if a string is a palindrome using recursion.
+- `PatternPrinting.java` - prints patterns (inverted triangle, right angle triangle) using recursion.
 - `ReverseAnArray.java` - reverses an array using recursion.
 - `SumOfArrayElements.java` - calculates the sum of all elements in an array using recursion.
 
