@@ -1,4 +1,4 @@
-package recursion.basic_intermediate;
+package recursion.intermediate;
 
 import java.util.Arrays;
 
@@ -16,10 +16,9 @@ public class BubbleSort {
                 arr[i + 1] = t;
             }
             return bubbleSort(arr, i + 1, n);
-        } else {
-            System.out.println();
+        } 
             return bubbleSort(arr, 0, n - 1);
-        }
+        
     }
     public static void main(String[] args) {
         int arr[] = { 2, 7, 3, 5, 6, 1, 9 };
