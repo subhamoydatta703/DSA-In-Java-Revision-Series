@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 213 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 214 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -17,7 +17,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `recursion/` | 27 | Recursion basics, number-recursion practice, and basic/intermediate/intermediate-level recursion exercises (factorial, Fibonacci, palindrome, digit counting, summing, reversing, array operations, sorting, printing, string manipulation/skipping, subsets/subarrays, and permutations). |
 | `revision/` | 74 | Rewritten or revisited versions of common interview problems, currently split into binarysearch, hashmap_revision, prefixsum, sliding_window, and two_pointer_revision folders. |
 | `sliding_window/` | 27 | Fixed-size and variable-size examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, all anagrams in a string, permutation in a string, longest bounded-sum windows, smallest threshold-sum windows, longest windows with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, subarray product limits, non-repeating substring, fruits into basket, longest subarray with sum equal to k, and equal 0s and 1s substring problems. |
-| `stack/` | 4 | Stack operations implemented recursively (pushing to the bottom, reversing a stack), queue implementation, and stock span problem. |
+| `stack/` | 5 | Stack operations (pushing to the bottom, reversing recursively), queue implementation, stock span, and next greater element problems. |
 | `two_pointers/` | 30 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, trapping rain water, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, doubled-pair checks, increasing subarray length, and mountain peak detection. |
 
 ## Topics Covered
@@ -35,7 +35,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - Greedy two-pointer pairing problems such as boats needed to save people
 - Java collection basics
 - Recursion fundamentals
-- Stack operations (e.g., reversing a stack, pushing an element to the bottom using recursion), queue implementation, and solving the stock span problem
+- Stack operations (e.g., reversing a stack, pushing an element to the bottom using recursion), queue implementation, stock span, and next greater element problems
 - Revision binary search for direct target lookup, search insert position, and finding first/last occurrences of a target
 - Loop-based and recursive pattern printing
 - Revision problems for interview-style practice
@@ -283,6 +283,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 
 ### Stack
 
+- `NextGreaterElement.java` - finds the next greater element for each element in an array using a monotonic stack.
 - `PushElementAtTheBottom.java` - recursively inserts an element at the bottom of a stack.
 - `ReverseAStack.java` - recursively reverses a stack.
 - `StackToQueue.java` - implements a queue using a stack by inserting new elements at the bottom recursively.
