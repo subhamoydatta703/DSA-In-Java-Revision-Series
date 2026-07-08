@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 219 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 223 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -14,11 +14,11 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `prefixsum/` | 6 | Range sum queries, equilibrium index, subarray sums, window maximums, and prefix sum logics. |
-| `queue/` | 4 | Queue implementation using arrays, first non-repeating character using a queue, and a stack implementation built on top of a queue. |
+| `queue/` | 5 | Queue implementation using arrays, first non-repeating character using a queue, a circular queue, and stack/queue conversion examples. |
 | `recursion/` | 27 | Recursion basics, number-recursion practice, and basic/intermediate/intermediate-level recursion exercises (factorial, Fibonacci, palindrome, digit counting, summing, reversing, array operations, sorting, printing, string manipulation/skipping, subsets/subarrays, and permutations). |
 | `revision/` | 74 | Rewritten or revisited versions of common interview problems, currently split into binarysearch, hashmap_revision, prefixsum, sliding_window, and two_pointer_revision folders. |
 | `sliding_window/` | 27 | Fixed-size and variable-size examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, all anagrams in a string, permutation in a string, longest bounded-sum windows, smallest threshold-sum windows, longest windows with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, subarray product limits, non-repeating substring, fruits into basket, longest subarray with sum equal to k, and equal 0s and 1s substring problems. |
-| `stack/` | 8 | Stack operations (pushing to the bottom, reversing recursively), queue implementation, stock span, next greater element, valid parentheses, duplicate parentheses, and max rectangular area in histogram problems. |
+| `stack/` | 9 | Stack operations (pushing to the bottom, reversing recursively), queue implementation, stock span, next greater element, baseball scoring, valid parentheses, duplicate parentheses, and max rectangular area in histogram problems. |
 | `two_pointers/` | 30 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, trapping rain water, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, doubled-pair checks, increasing subarray length, and mountain peak detection. |
 
 ## Topics Covered
@@ -118,6 +118,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `CircularQueueUsingArray.java` - implements a circular queue using an array.
 - `FirstNonRepeatingChar.java` - finds the first non-repeating character index in a string using a queue and frequency map.
 - `QueueUsingArray.java` - implements a linear queue using an array.
+- `ReverseQueueUSingStack.java` - reverses a queue using a stack.
 - `QueueToStack.java` - implements a stack using a queue.
 
 ### Recursion
@@ -293,6 +294,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 ### Stack
 
 - `DuplicateParentheses.java` - checks for duplicate/redundant parentheses in an expression.
+- `BaseBallProblem.java` - solves the baseball game scoring problem using a stack.
 - `MaxRectangularAreaInHistogram.java` - finds the maximum rectangular area in a histogram using a stack.
 - `NextGreaterElement.java` - finds the next greater element for each element in an array using a monotonic stack.
 - `PushElementAtTheBottom.java` - recursively inserts an element at the bottom of a stack.
@@ -444,3 +446,4 @@ Add new examples inside the most relevant topic folder, keep the `package` decla
 ## License
 
 This project is for educational purposes.
+
