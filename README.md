@@ -14,7 +14,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `prefixsum/` | 6 | Range sum queries, equilibrium index, subarray sums, window maximums, and prefix sum logics. |
-| `queue/` | 2 | Queue implementation using arrays (linear and circular queues). |
+| `queue/` | 4 | Queue implementation using arrays, first non-repeating character using a queue, and a stack implementation built on top of a queue. |
 | `recursion/` | 27 | Recursion basics, number-recursion practice, and basic/intermediate/intermediate-level recursion exercises (factorial, Fibonacci, palindrome, digit counting, summing, reversing, array operations, sorting, printing, string manipulation/skipping, subsets/subarrays, and permutations). |
 | `revision/` | 74 | Rewritten or revisited versions of common interview problems, currently split into binarysearch, hashmap_revision, prefixsum, sliding_window, and two_pointer_revision folders. |
 | `sliding_window/` | 27 | Fixed-size and variable-size examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, all anagrams in a string, permutation in a string, longest bounded-sum windows, smallest threshold-sum windows, longest windows with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, subarray product limits, non-repeating substring, fruits into basket, longest subarray with sum equal to k, and equal 0s and 1s substring problems. |
@@ -26,7 +26,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - Array traversal, sorting, pair sums, and subarray problems
 - Binary search for direct target lookup, insert position, finding first, last, or both occurrences of a target, rotated sorted array search (with or without duplicates), finding minimum/maximum/peak elements in rotated sorted arrays, finding the number of rotations, finding bounds (largest less/equal and minimum greater/equal elements), finding the floor square root of an integer, finding the floor of the N-th root of an integer, solving the Koko eating bananas problem, and finding the minimum number of days to make m bouquets
 - Hashing with `HashMap` and `HashSet`
-- Queue implementations (linear and circular queues using arrays)
+- Queue implementations (linear and circular queues using arrays), first non-repeating character tracking, and stack simulation using a queue
 - Fixed-size sliding-window problems for contiguous subarray averages, sums, maximum sums, minimum sums, target-sum counting, window maximums, first negative values, distinct counts, frequency tracking, odd counts, vowel counts, finding all anagrams in a string, and checking for a permutation of a string inside another string
 - Variable-size sliding-window problems for longest bounded-sum subarrays, smallest subarrays meeting a target sum, longest subarrays with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, counting subarrays with product less than `k`, substrings without repeating characters, and substrings with equal 0s and 1s
 - Prefix sum algorithms (e.g., longest subarray with sum equal to `k`)
@@ -116,7 +116,9 @@ The code is organized for learning, revision, and quick experimentation rather t
 ### Queue
 
 - `CircularQueueUsingArray.java` - implements a circular queue using an array.
+- `FirstNonRepeatingChar.java` - finds the first non-repeating character index in a string using a queue and frequency map.
 - `QueueUsingArray.java` - implements a linear queue using an array.
+- `QueueToStack.java` - implements a stack using a queue.
 
 ### Recursion
 
