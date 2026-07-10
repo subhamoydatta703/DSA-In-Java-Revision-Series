@@ -30,6 +30,7 @@ public class Basic_Concepts {
         System.out.println("Null");
     }
 
+    // insert at head
     static Node instertAtHead(Node head, int val) {
         Node newNode = new Node(val);
         newNode.next = head;
@@ -37,6 +38,7 @@ public class Basic_Concepts {
         return newNode;
     }
 
+    // insert at tail
     static Node insertAtTail(Node head, int val) {
         Node newNode = new Node(val);
         if (head == null)
@@ -47,6 +49,40 @@ public class Basic_Concepts {
         }
         curr.next = newNode;
         return head;
+    }
+
+    // delete at head position
+
+    static Node deleteAtHead(Node head) {
+        if (head == null)
+            return null;
+
+        head = head.next;
+        return head;
+    }
+
+    // delete by value
+    static Node delByValue(Node head, int val) {
+        if (head == null)
+            return null;
+
+        if (head.data == val) {
+            head = head.next;
+            return head;
+        }
+
+        Node curr = head;
+        while (curr.next != null && curr.next.data != val) {
+            curr = curr.next;
+        }
+
+        if (curr.next == null) {
+            return head;
+        }
+        curr.next = curr.next.next;
+
+        return head;
+
     }
 
     public static void main(String[] args) {
@@ -83,7 +119,6 @@ public class Basic_Concepts {
 
         insertAtTail(head, 40);
         nodeTraversal(head);
-
 
     }
 

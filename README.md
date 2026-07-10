@@ -12,7 +12,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `binarysearch/` | 18 | Binary search examples for target lookup, insert position, finding first/last occurrences of a target, rotated sorted array searches (with or without duplicates, finding minimum/maximum/peak elements, and finding the number of rotations), finding lower/upper bounds, finding the floor square root of an integer, finding the floor of the N-th root of an integer, solving the Koko eating bananas problem, and finding the minimum number of days to make m bouquets. |
 | `collections/` | 2 | Basic Java `Queue` and `Stack` examples. |
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
-| `linked_list/` | 1 | Basic concepts of linked list, including node definition, construction, traversal, and insertion at head/tail. |
+| `linked_list/` | 1 | Basic concepts of linked list, including node definition, construction, traversal, insertion, and deletion. |
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `prefixsum/` | 6 | Range sum queries, equilibrium index, subarray sums, window maximums, and prefix sum logics. |
 | `queue/` | 5 | Queue implementation using arrays, first non-repeating character using a queue, a circular queue, and stack/queue conversion examples. |
@@ -27,7 +27,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - Array traversal, sorting, pair sums, and subarray problems
 - Binary search for direct target lookup, insert position, finding first, last, or both occurrences of a target, rotated sorted array search (with or without duplicates), finding minimum/maximum/peak elements in rotated sorted arrays, finding the number of rotations, finding bounds (largest less/equal and minimum greater/equal elements), finding the floor square root of an integer, finding the floor of the N-th root of an integer, solving the Koko eating bananas problem, and finding the minimum number of days to make m bouquets
 - Hashing with `HashMap` and `HashSet`
-- Linked list node definition, structure creation, traversal, and insertion (head/tail)
+- Linked list node definition, structure creation, traversal, insertion, and deletion
 - Queue implementations (linear and circular queues using arrays), first non-repeating character tracking, and stack simulation using a queue
 - Fixed-size sliding-window problems for contiguous subarray averages, sums, maximum sums, minimum sums, target-sum counting, window maximums, first negative values, distinct counts, frequency tracking, odd counts, vowel counts, finding all anagrams in a string, and checking for a permutation of a string inside another string
 - Variable-size sliding-window problems for longest bounded-sum subarrays, smallest subarrays meeting a target sum, longest subarrays with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, counting subarrays with product less than `k`, substrings without repeating characters, and substrings with equal 0s and 1s
@@ -103,7 +103,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 
 ### Linked List
 
-- `Basic_Concepts.java` - demonstrates node creation, linking to form a basic list, list traversal, and insertion at the head and tail.
+- `Basic_Concepts.java` - demonstrates node creation, linking to form a basic list, list traversal, insertion (head/tail), and deletion (head/value).
 
 ### Patterns
 
