@@ -15,6 +15,7 @@ class DoublyNode {
 
 public class DoublyLinkedList {
 
+    // Traverses the list from head to tail and prints each node's data.
     static void nodeForwardTraversal(DoublyNode head) {
         DoublyNode curr = head;
         while (curr != null) {
@@ -24,6 +25,7 @@ public class DoublyLinkedList {
         System.out.println("Null");
     }
 
+    // Traverses the list from tail to head and prints each node's data.
     static void nodeBackwardTraversal(DoublyNode tail) {
         DoublyNode curr = tail;
         while (curr != null) {
@@ -33,19 +35,38 @@ public class DoublyLinkedList {
         System.out.println("Null");
     }
 
+    // Inserts a new node at the beginning of the doubly linked list.
     static DoublyNode insertAtHeadNode(DoublyNode head, int val) {
         DoublyNode newNode = new DoublyNode(val);
         if (head == null)
             return newNode;
         head.prev = newNode;
         newNode.next = head;
-        System.out.println(
-                "Node data: " + newNode.data + " Node prev: " + newNode.prev + " Node next: " + newNode.next.data);
         return newNode;
 
     }
 
+    // Inserts a new node at the end of the doubly linked list.
+    static DoublyNode insertAtTail(DoublyNode head, int val) {
+        DoublyNode newNode = new DoublyNode(val);
+        if (head == null)
+            return newNode;
+        DoublyNode curr = head;
+        while (curr.next != null) {
+            curr = curr.next;
+        }
+        curr.next = newNode;
+        newNode.prev = curr;
+        newNode.next = null;
+        return head;
+    }
+
+    // Inserts a new node at the given zero-based position.
     static DoublyNode insertAtPos(DoublyNode head, int pos, int val) {
+        if (pos < 0) {
+            System.out.println("Position out of range");
+            return head;
+        }
         DoublyNode newNode = new DoublyNode(val);
         if (head == null)
             return newNode;
@@ -80,18 +101,88 @@ public class DoublyLinkedList {
 
     }
 
-    static DoublyNode insertAtTail(DoublyNode head, int val) {
-        DoublyNode newNode = new DoublyNode(val);
+    // Deletes the first node of the doubly linked list.
+    static DoublyNode deleteAtHeadNode(DoublyNode head) {
         if (head == null)
-            return newNode;
+            return null;
+
+        head = head.next;
+        if (head != null) {
+            head.prev = null;
+        }
+        return head;
+    }
+
+    // Deletes the last node of the doubly linked list.
+    static DoublyNode deleteAtTailNode(DoublyNode head) {
+
+        if (head == null)
+            return null;
+
+        if (head.next == null)
+            return null;
         DoublyNode curr = head;
-        while (curr.next != null) {
+        while (curr.next.next != null) {
             curr = curr.next;
         }
-        curr.next = newNode;
-        newNode.prev = curr;
-        newNode.next = null;
+        curr.next = null;
+
         return head;
+    }
+
+    // Deletes the node at the given zero-based position.
+    static DoublyNode deleteAtPos(DoublyNode head, int pos) {
+        if (pos < 0) {
+            System.out.println("Position out of range");
+            return head;
+        }
+
+        if (head == null)
+            return null;
+        DoublyNode curr = head;
+        int i = 0;
+        if (pos == 0) {
+            return deleteAtHeadNode(head);
+        }
+
+        while (curr != null && pos > 0 && i < pos - 1) {
+            curr = curr.next;
+            i++;
+        }
+
+        if (curr == null || curr.next == null) {
+            System.out.println("Position out of range");
+            return head;
+        }
+
+        if (curr.next.next == null) {
+            return deleteAtTailNode(head);
+        }
+
+        DoublyNode val = curr.next.next;
+        curr.next = val;
+        val.prev = curr;
+
+        return head;
+    }
+
+    // reverse a doubly linked list
+    static DoublyNode revDoublyLL(DoublyNode head) {
+        if (head == null)
+            return null;
+        if (head.next == null)
+            return head;
+        DoublyNode curr = head;
+        DoublyNode tail = head;
+        while (curr != null) {
+            DoublyNode temp = curr.next;
+            curr.next = curr.prev;
+            curr.prev = temp;
+            tail = curr;
+            curr = temp;
+        }
+
+        return tail;
     }
 
     public static void main(String[] args) {
