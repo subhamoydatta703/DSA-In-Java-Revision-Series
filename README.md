@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 227 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 245 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -12,7 +12,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `binarysearch/` | 18 | Binary search examples for target lookup, insert position, finding first/last occurrences of a target, rotated sorted array searches (with or without duplicates, finding minimum/maximum/peak elements, and finding the number of rotations), finding lower/upper bounds, finding the floor square root of an integer, finding the floor of the N-th root of an integer, solving the Koko eating bananas problem, and finding the minimum number of days to make m bouquets. |
 | `collections/` | 2 | Basic Java `Queue` and `Stack` examples. |
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
-| `linked_list/` | 2 | Basic singly and doubly linked list concepts, including node definition, construction, traversal, insertion, deletion, reversal, and previous/next links. |
+| `linked_list/` | 20 | Singly and doubly linked list implementations and operations, split into `singly_linked_list/` and `doubly_linked_list/` subfolders (including node definitions, traversal, insertion, deletion, and reversal). |
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `prefixsum/` | 6 | Range sum queries, equilibrium index, subarray sums, window maximums, and prefix sum logics. |
 | `queue/` | 5 | Queue implementation using arrays, first non-repeating character using a queue, a circular queue, and stack/queue conversion examples. |
@@ -27,7 +27,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - Array traversal, sorting, pair sums, and subarray problems
 - Binary search for direct target lookup, insert position, finding first, last, or both occurrences of a target, rotated sorted array search (with or without duplicates), finding minimum/maximum/peak elements in rotated sorted arrays, finding the number of rotations, finding bounds (largest less/equal and minimum greater/equal elements), finding the floor square root of an integer, finding the floor of the N-th root of an integer, solving the Koko eating bananas problem, and finding the minimum number of days to make m bouquets
 - Hashing with `HashMap` and `HashSet`
-- Linked list node definition, structure creation, traversal, insertion, deletion, reversal, and doubly linked list forward/backward navigation
+- Linked list implementations, including singly and doubly linked list structure creation, forward/backward traversal, insertion/deletion at head/tail/position/value, and list reversal
 - Queue implementations (linear and circular queues using arrays), first non-repeating character tracking, and stack simulation using a queue
 - Fixed-size sliding-window problems for contiguous subarray averages, sums, maximum sums, minimum sums, target-sum counting, window maximums, first negative values, distinct counts, frequency tracking, odd counts, vowel counts, finding all anagrams in a string, and checking for a permutation of a string inside another string
 - Variable-size sliding-window problems for longest bounded-sum subarrays, smallest subarrays meeting a target sum, longest subarrays with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, counting subarrays with product less than `k`, substrings without repeating characters, and substrings with equal 0s and 1s
@@ -103,8 +103,31 @@ The code is organized for learning, revision, and quick experimentation rather t
 
 ### Linked List
 
-- `Basic_Concepts.java` - demonstrates singly linked list node creation, linking, traversal, insertion (head/tail), and deletion (head/value).
-- `DoublyLinkedList.java` - demonstrates doubly linked list node creation, previous/next links, forward/backward traversal helpers, and list reversal.
+#### Singly Linked List
+
+- `singly_linked_list/Node.java` - represents a single node of a singly linked list.
+- `singly_linked_list/SinglyLinkedList.java` - basic singly linked list creation and structure.
+- `singly_linked_list/NodeTraversal.java` - traverses and prints elements of a singly linked list.
+- `singly_linked_list/InsertAtHead.java` - inserts a node at the head of a singly linked list.
+- `singly_linked_list/InsertAtTail.java` - inserts a node at the tail of a singly linked list.
+- `singly_linked_list/DeleteAtHead.java` - deletes the head node of a singly linked list.
+- `singly_linked_list/DeleteByValue.java` - deletes a node with a specific value in a singly linked list.
+- `singly_linked_list/NumOfNodes.java` - counts the number of nodes in a singly linked list.
+- `singly_linked_list/FindMidNode.java` - finds the middle node of a singly linked list.
+
+#### Doubly Linked List
+
+- `doubly_linked_list/DoublyNode.java` - node representation for a doubly linked list.
+- `doubly_linked_list/DoublyLinkedList.java` - basic doubly linked list operations.
+- `doubly_linked_list/NodeForwardTraversal.java` - traverses a doubly linked list forwards.
+- `doubly_linked_list/NodeBackwardTraversal.java` - traverses a doubly linked list backwards.
+- `doubly_linked_list/InsertAtHeadNode.java` - inserts a node at the head of a doubly linked list.
+- `doubly_linked_list/InsertAtTail.java` - inserts a node at the tail of a doubly linked list.
+- `doubly_linked_list/InsertAtPos.java` - inserts a node at a specific position in a doubly linked list.
+- `doubly_linked_list/DeleteAtHeadNode.java` - deletes the head node of a doubly linked list.
+- `doubly_linked_list/DeleteAtTailNode.java` - deletes the tail node of a doubly linked list.
+- `doubly_linked_list/DeleteAtPos.java` - deletes a node at a specific position in a doubly linked list.
+- `doubly_linked_list/ReverseDoublyLinkedList.java` - reverses a doubly linked list.
 
 ### Patterns
 
@@ -407,6 +430,12 @@ java stack.ReverseAStack
 
 javac queue/CircularQueueUsingArray.java
 java queue.CircularQueueUsingArray
+
+javac linked_list/singly_linked_list/SinglyLinkedList.java
+java linked_list.singly_linked_list.SinglyLinkedList
+
+javac linked_list/doubly_linked_list/ReverseDoublyLinkedList.java
+java linked_list.doubly_linked_list.ReverseDoublyLinkedList
 ```
 
 For files that read from standard input, type the expected values after running the program. For example, `arrays/ArrayInputSortPractice.java` expects the array size first, followed by the array elements.
