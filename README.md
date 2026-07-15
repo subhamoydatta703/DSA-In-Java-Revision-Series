@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 249 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 252 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -9,6 +9,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | Folder | Files | Contents |
 | --- | ---: | --- |
 | `arrays/` | 5 | Array input, sorting, pair-sum practice, subarray sum, subarray product, and Codeforces-style array examples. |
+| `backtracking/` | 3 | Backtracking practice for mutating arrays in-place and generating subsets of arrays and strings. |
 | `binarysearch/` | 18 | Binary search examples for target lookup, insert position, finding first/last occurrences of a target, rotated sorted array searches (with or without duplicates, finding minimum/maximum/peak elements, and finding the number of rotations), finding lower/upper bounds, finding the floor square root of an integer, finding the floor of the N-th root of an integer, solving the Koko eating bananas problem, and finding the minimum number of days to make m bouquets. |
 | `collections/` | 2 | Basic Java `Queue` and `Stack` examples. |
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
@@ -25,6 +26,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 ## Topics Covered
 
 - Array traversal, sorting, pair sums, and subarray problems
+- Backtracking on arrays and recursive subset generation for arrays and strings
 - Binary search for direct target lookup, insert position, finding first, last, or both occurrences of a target, rotated sorted array search (with or without duplicates), finding minimum/maximum/peak elements in rotated sorted arrays, finding the number of rotations, finding bounds (largest less/equal and minimum greater/equal elements), finding the floor square root of an integer, finding the floor of the N-th root of an integer, solving the Koko eating bananas problem, and finding the minimum number of days to make m bouquets
 - Hashing with `HashMap` and `HashSet`
 - Linked list implementations, including singly and doubly linked list structure creation, forward/backward traversal, insertion/deletion at head/tail/position/value, list reversal, removing the N-th node from the end, palindrome checks, and adding two numbers
@@ -53,6 +55,12 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `RCB_Problem_CodeForce.java` - Codeforces-style array practice that prints valid center-out element pairs.
 - `SubarrayProductPractice.java` - subarray product counting experiments.
 - `SubarraySumPractice.java` - prefix-sum based subarray sum counting.
+
+### Backtracking
+
+- `BackTrackingOnArrays.java` - demonstrates in-place array updates and the backtracking step that restores earlier values after recursion returns.
+- `FindSubSetArr.java` - generates all subsets of an integer array using include/exclude recursion and stores them in a result list.
+- `FindSubSetStr.java` - prints all subsets of a string using recursive yes/no choices and prints `Null` for the empty subset.
 
 ### Binary Search
 
