@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 257 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 258 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -9,7 +9,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | Folder | Files | Contents |
 | --- | ---: | --- |
 | `arrays/` | 5 | Array input, sorting, pair-sum practice, subarray sum, subarray product, and Codeforces-style array examples. |
-| `backtracking/` | 8 | Backtracking practice for mutating arrays in-place, generating subsets and permutations, finding subset and combination sums, and solving the N-Queens placement problem. |
+| `backtracking/` | 9 | Backtracking practice for mutating arrays in-place, generating subsets and permutations, finding subset and combination sums, palindrome partitioning, and solving the N-Queens placement problem. |
 | `binarysearch/` | 18 | Binary search examples for target lookup, insert position, finding first/last occurrences of a target, rotated sorted array searches (with or without duplicates, finding minimum/maximum/peak elements, and finding the number of rotations), finding lower/upper bounds, finding the floor square root of an integer, finding the floor of the N-th root of an integer, solving the Koko eating bananas problem, and finding the minimum number of days to make m bouquets. |
 | `collections/` | 2 | Basic Java `Queue` and `Stack` examples. |
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
@@ -64,6 +64,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `FindSubSetSumEqToTarget.java` - checks whether any subset can reach a target sum using include/exclude recursion with a remaining target.
 - `FindSubSetStr.java` - prints all subsets of a string using recursive yes/no choices and prints `Null` for the empty subset.
 - `NQueens.java` - solves the 4-Queens problem by checking columns and diagonals before placing each queen and backtracking after each recursive branch.
+- `PalindromePartitioningProblem.java` - partitions a string into all palindromic substrings using backtracking and recursive exploration.
 - `Permutations.java` - generates all permutations of a string using backtracking with a `StringBuilder` and a `used` array.
 - `PrintSubSetArr.java` - prints all subsets of an integer array using recursive include/exclude choices and backtracking.
 
