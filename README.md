@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 261 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 262 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -13,7 +13,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `binarysearch/` | 18 | Binary search examples for target lookup, insert position, finding first/last occurrences of a target, rotated sorted array searches (with or without duplicates, finding minimum/maximum/peak elements, and finding the number of rotations), finding lower/upper bounds, finding the floor square root of an integer, finding the floor of the N-th root of an integer, solving the Koko eating bananas problem, and finding the minimum number of days to make m bouquets. |
 | `collections/` | 2 | Basic Java `Queue` and `Stack` examples. |
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
-| `linked_list/` | 24 | Singly and doubly linked list implementations and operations, split into `singly_linked_list/` and `doubly_linked_list/` subfolders (including node definitions, traversal, insertion, deletion, reversal, removing the N-th node from end, palindrome checks, and adding two numbers). |
+| `linked_list/` | 25 | Singly and doubly linked list implementations and operations, split into `singly_linked_list/` and `doubly_linked_list/` subfolders (including node definitions, traversal, insertion, deletion, reversal, removing the N-th node from end, palindrome checks, and adding two numbers). |
 | `patterns/` | 2 | Pattern-printing examples using loops and recursion. |
 | `prefixsum/` | 6 | Range sum queries, equilibrium index, subarray sums, window maximums, and prefix sum logics. |
 | `queue/` | 5 | Queue implementation using arrays, first non-repeating character using a queue, a circular queue, and stack/queue conversion examples. |
@@ -127,6 +127,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `singly_linked_list/InsertAtTail.java` - inserts a node at the tail of a singly linked list.
 - `singly_linked_list/DeleteAtHead.java` - deletes the head node of a singly linked list.
 - `singly_linked_list/DeleteByValue.java` - deletes a node with a specific value in a singly linked list.
+- `singly_linked_list/IntersectionOfTwoLL.java` - finds the intersection node of two singly linked lists using a two-pointer traversal.
 - `singly_linked_list/AddTwoNumbers.java` - adds two numbers represented as linked lists.
 - `singly_linked_list/NumOfNodes.java` - counts the number of nodes in a singly linked list.
 - `singly_linked_list/FindMidNode.java` - finds the middle node of a singly linked list.
