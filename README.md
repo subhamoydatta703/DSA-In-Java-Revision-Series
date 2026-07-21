@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 258 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 261 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -9,7 +9,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | Folder | Files | Contents |
 | --- | ---: | --- |
 | `arrays/` | 5 | Array input, sorting, pair-sum practice, subarray sum, subarray product, and Codeforces-style array examples. |
-| `backtracking/` | 9 | Backtracking practice for mutating arrays in-place, generating subsets and permutations, finding subset and combination sums, palindrome partitioning, and solving the N-Queens placement problem. |
+| `backtracking/` | 11 | Backtracking practice for mutating arrays in-place, generating subsets and permutations, finding subset and combination sums, palindrome partitioning, and solving the N-Queens placement problem. |
 | `binarysearch/` | 18 | Binary search examples for target lookup, insert position, finding first/last occurrences of a target, rotated sorted array searches (with or without duplicates, finding minimum/maximum/peak elements, and finding the number of rotations), finding lower/upper bounds, finding the floor square root of an integer, finding the floor of the N-th root of an integer, solving the Koko eating bananas problem, and finding the minimum number of days to make m bouquets. |
 | `collections/` | 2 | Basic Java `Queue` and `Stack` examples. |
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
@@ -18,7 +18,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `prefixsum/` | 6 | Range sum queries, equilibrium index, subarray sums, window maximums, and prefix sum logics. |
 | `queue/` | 5 | Queue implementation using arrays, first non-repeating character using a queue, a circular queue, and stack/queue conversion examples. |
 | `recursion/` | 27 | Recursion basics, number-recursion practice, and basic/intermediate/intermediate-level recursion exercises (factorial, Fibonacci, palindrome, digit counting, summing, reversing, array operations, sorting, printing, string manipulation/skipping, subsets/subarrays, and permutations). |
-| `revision/` | 74 | Rewritten or revisited versions of common interview problems, currently split into binarysearch, hashmap_revision, prefixsum, sliding_window, and two_pointer_revision folders. |
+| `revision/` | 75 | Rewritten or revisited versions of common interview problems, currently split into binarysearch, hashmap_revision, prefixsum, sliding_window, and two_pointer_revision folders. |
 | `sliding_window/` | 27 | Fixed-size and variable-size examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, all anagrams in a string, permutation in a string, longest bounded-sum windows, smallest threshold-sum windows, longest windows with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, subarray product limits, non-repeating substring, fruits into basket, longest subarray with sum equal to k, and equal 0s and 1s substring problems. |
 | `stack/` | 11 | Stack operations (pushing to the bottom, reversing recursively), queue implementation, stock span, next greater element, next greater element II, minimum stack, baseball scoring, valid parentheses, duplicate parentheses, and max rectangular area in histogram problems. |
 | `two_pointers/` | 30 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, trapping rain water, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, doubled-pair checks, increasing subarray length, and mountain peak detection. |
@@ -59,6 +59,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 ### Backtracking
 
 - `BackTrackingOnArrays.java` - demonstrates in-place array updates and the backtracking step that restores earlier values after recursion returns.
+- `CombinationsProblem.java` - generates combinations of array elements using recursion and backtracking.
 - `CombinationSumProblemII.java` - finds unique combinations that sum to a target by sorting the array, including each candidate at most once, and skipping duplicate values on exclusion branches.
 - `FindSubSetArr.java` - generates all subsets of an integer array using include/exclude recursion and stores them in a result list.
 - `FindSubSetSumEqToTarget.java` - checks whether any subset can reach a target sum using include/exclude recursion with a remaining target.
@@ -246,6 +247,10 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `CountSubSrrSUmEqToK.java` - revisits counting subarrays with sum equal to `k`.
 - `FindEqbIndex.java` - revisits finding the equilibrium index of an array.
 - `RangeSumQueries.java` - revisits prefix sum based range sum queries.
+
+#### Backtracking Revision (1)
+
+- `Basic_Recursion_Backtracking.java` - revisits basic recursion and backtracking patterns with example problems.
 
 #### Sliding Window Revision
 
