@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 268 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 269 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -18,7 +18,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `prefixsum/` | 6 | Range sum queries, equilibrium index, subarray sums, window maximums, and prefix sum logics. |
 | `queue/` | 5 | Queue implementation using arrays, first non-repeating character using a queue, a circular queue, and stack/queue conversion examples. |
 | `recursion/` | 27 | Recursion basics, number-recursion practice, and basic/intermediate/intermediate-level recursion exercises (factorial, Fibonacci, palindrome, digit counting, summing, reversing, array operations, sorting, printing, string manipulation/skipping, subsets/subarrays, and permutations). |
-| `revision/` | 76 | Rewritten or revisited versions of common interview problems, currently split into binarysearch, hashmap_revision, prefixsum, backtracking, sliding_window, and two_pointer_revision folders. |
+| `revision/` | 77 | Rewritten or revisited versions of common interview problems, currently split into binarysearch, hashmap_revision, prefixsum, backtracking, sliding_window, and two_pointer_revision folders. |
 | `sliding_window/` | 27 | Fixed-size and variable-size examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, all anagrams in a string, permutation in a string, longest bounded-sum windows, smallest threshold-sum windows, longest windows with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, subarray product limits, non-repeating substring, fruits into basket, longest subarray with sum equal to k, and equal 0s and 1s substring problems. |
 | `stack/` | 11 | Stack operations (pushing to the bottom, reversing recursively), queue implementation, stock span, next greater element, next greater element II, minimum stack, baseball scoring, valid parentheses, duplicate parentheses, and max rectangular area in histogram problems. |
 | `two_pointers/` | 30 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, trapping rain water, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, doubled-pair checks, increasing subarray length, and mountain peak detection. |
@@ -255,9 +255,10 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `FindEqbIndex.java` - revisits finding the equilibrium index of an array.
 - `RangeSumQueries.java` - revisits prefix sum based range sum queries.
 
-#### Backtracking Revision (2)
+#### Backtracking Revision (3)
 
 - `Basic_Recursion_Backtracking.java` - revisits basic recursion and backtracking patterns with example problems.
+- `BuildAndUnbuildAPath.java` - revisits generating all combinations of size `k` from an array by recursively building a path (include the current element) and unbuilding it (remove after the recursive call / exclude branch).
 - `Permutations_revision.java` - revisits generating all permutations of an integer array using backtracking with a `used` boolean array.
 
 #### Sliding Window Revision
