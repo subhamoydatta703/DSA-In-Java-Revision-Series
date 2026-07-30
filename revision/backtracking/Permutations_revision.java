@@ -3,7 +3,7 @@ package revision.backtracking;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Permutations_revision {
+public class Permutations_Revision {
     static List<List<Integer>> permute(int arr[], boolean[] used, List<Integer> curr, List<List<Integer>> res,
             int idx) {
         if (curr.size() == arr.length) {

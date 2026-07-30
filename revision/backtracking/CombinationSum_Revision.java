@@ -3,7 +3,7 @@ package revision.backtracking;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CombinationSum {
+public class CombinationSum_Revision {
     static List<List<Integer>> comSum(int arr[], int t, List<Integer> curr, List<List<Integer>> res, int sum, int i) {
         if (sum == t) {
             res.add(new ArrayList<>(curr));
