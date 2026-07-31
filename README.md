@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 275 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 276 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -18,7 +18,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `prefixsum/` | 6 | Range sum queries, equilibrium index, subarray sums, window maximums, and prefix sum logics. |
 | `queue/` | 5 | Queue implementation using arrays, first non-repeating character using a queue, a circular queue, and stack/queue conversion examples. |
 | `recursion/` | 27 | Recursion basics, number-recursion practice, and basic/intermediate/intermediate-level recursion exercises (factorial, Fibonacci, palindrome, digit counting, summing, reversing, array operations, sorting, printing, string manipulation/skipping, subsets/subarrays, and permutations). |
-| `revision/` | 81 | Rewritten or revisited versions of common interview problems, currently split into binarysearch, hashmap_revision, prefixsum, backtracking, sliding_window, and two_pointer_revision folders. |
+| `revision/` | 82 | Rewritten or revisited versions of common interview problems, currently split into binarysearch, hashmap_revision, prefixsum, backtracking, sliding_window, and two_pointer_revision folders. |
 | `sliding_window/` | 27 | Fixed-size and variable-size examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, all anagrams in a string, permutation in a string, longest bounded-sum windows, smallest threshold-sum windows, longest windows with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, subarray product limits, non-repeating substring, fruits into basket, longest subarray with sum equal to k, and equal 0s and 1s substring problems. |
 | `stack/` | 11 | Stack operations (pushing to the bottom, reversing recursively), queue implementation, stock span, next greater element, next greater element II, minimum stack, baseball scoring, valid parentheses, duplicate parentheses, and max rectangular area in histogram problems. |
 | `two_pointers/` | 30 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, trapping rain water, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, doubled-pair checks, increasing subarray length, and mountain peak detection. |
@@ -43,7 +43,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - Recursion fundamentals
 - Stack operations (e.g., reversing a stack, pushing an element to the bottom using recursion), queue implementation, stock span, next greater element, next greater element II, minimum stack, valid parentheses, duplicate parentheses, and max rectangular area in histogram problems
 - Revision binary search for direct target lookup, search insert position, and finding first/last occurrences of a target
-- Revision backtracking for basic recursion patterns, path building and unbuilding, combinations/subsets, combination sum with candidate reuse, unique combination sum without duplicates, permutations, and checking whether a path exists between two cells in a grid
+- Revision backtracking for basic recursion patterns, path building and unbuilding, combinations/subsets, combination sum with candidate reuse, unique combination sum without duplicates, permutations, checking whether a path exists between two cells in a grid, and finding a grid path while printing its step count
 - Loop-based and recursive pattern printing
 - Revision problems for interview-style practice
 
@@ -258,7 +258,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `FindEqbIndex.java` - revisits finding the equilibrium index of an array.
 - `RangeSumQueries.java` - revisits prefix sum based range sum queries.
 
-#### Backtracking Revision (7)
+#### Backtracking Revision (8)
 
 - `Basic_Recursion_Backtracking.java` - revisits basic recursion and backtracking patterns with example problems.
 - `BuildAndUnbuildAPath.java` - revisits generating all combinations of size `k` from an array by recursively building a path (include the current element) and unbuilding it (remove after the recursive call / exclude branch).
@@ -266,6 +266,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `CombinationSum_Revision.java` - revisits finding all combinations that sum to a target, allowing the same candidate to be reused by staying on the current index when including an element, with early pruning when the running sum exceeds the target.
 - `CombinationSumII_Revision.java` - revisits finding unique combinations that sum to a target by including each candidate at most once and skipping duplicate values on the exclusion branch.
 - `Combinations_Revision.java` - revisits generating all subsets/combinations of an array using include/exclude recursion and backtracking.
+- `CountAllSimplePathsInGrid.java` - finds a path from a start cell to a destination cell in a grid with obstacles using backtracking and a visited matrix, printing the step count when the destination is reached.
 - `Permutations_Revision.java` - revisits generating all permutations of an integer array using backtracking with a `used` boolean array.
 
 #### Sliding Window Revision
