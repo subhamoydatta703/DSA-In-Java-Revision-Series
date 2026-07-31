@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 273 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 275 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -9,7 +9,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | Folder | Files | Contents |
 | --- | ---: | --- |
 | `arrays/` | 5 | Array input, sorting, pair-sum practice, subarray sum, subarray product, and Codeforces-style array examples. |
-| `backtracking/` | 17 | Backtracking practice for mutating arrays in-place, generating subsets and permutations (including unique permutations with duplicates), finding subset and combination sums equal to a target (with and without candidate reuse), palindrome partitioning, generating well-formed parentheses, solving the N-Queens placement problem, and finding all paths in a rat-in-a-maze grid. |
+| `backtracking/` | 18 | Backtracking practice for mutating arrays in-place, generating subsets and permutations (including unique permutations with duplicates and permutations without adjacent duplicate characters), finding subset and combination sums equal to a target (with and without candidate reuse), palindrome partitioning, generating well-formed parentheses, solving the N-Queens placement problem, and finding all paths in a rat-in-a-maze grid. |
 | `binarysearch/` | 18 | Binary search examples for target lookup, insert position, finding first/last occurrences of a target, rotated sorted array searches (with or without duplicates, finding minimum/maximum/peak elements, and finding the number of rotations), finding lower/upper bounds, finding the floor square root of an integer, finding the floor of the N-th root of an integer, solving the Koko eating bananas problem, and finding the minimum number of days to make m bouquets. |
 | `collections/` | 2 | Basic Java `Queue` and `Stack` examples. |
 | `hashing/` | 18 | `HashMap` and `HashSet` based solutions for frequency counting, duplicates, unique elements, top-k frequency, two sum, pair sums, union, intersection, subset checks, zero-sum subarrays, longest consecutive sequence, and subarray-sum problems. |
@@ -18,7 +18,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `prefixsum/` | 6 | Range sum queries, equilibrium index, subarray sums, window maximums, and prefix sum logics. |
 | `queue/` | 5 | Queue implementation using arrays, first non-repeating character using a queue, a circular queue, and stack/queue conversion examples. |
 | `recursion/` | 27 | Recursion basics, number-recursion practice, and basic/intermediate/intermediate-level recursion exercises (factorial, Fibonacci, palindrome, digit counting, summing, reversing, array operations, sorting, printing, string manipulation/skipping, subsets/subarrays, and permutations). |
-| `revision/` | 80 | Rewritten or revisited versions of common interview problems, currently split into binarysearch, hashmap_revision, prefixsum, backtracking, sliding_window, and two_pointer_revision folders. |
+| `revision/` | 81 | Rewritten or revisited versions of common interview problems, currently split into binarysearch, hashmap_revision, prefixsum, backtracking, sliding_window, and two_pointer_revision folders. |
 | `sliding_window/` | 27 | Fixed-size and variable-size examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, all anagrams in a string, permutation in a string, longest bounded-sum windows, smallest threshold-sum windows, longest windows with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, subarray product limits, non-repeating substring, fruits into basket, longest subarray with sum equal to k, and equal 0s and 1s substring problems. |
 | `stack/` | 11 | Stack operations (pushing to the bottom, reversing recursively), queue implementation, stock span, next greater element, next greater element II, minimum stack, baseball scoring, valid parentheses, duplicate parentheses, and max rectangular area in histogram problems. |
 | `two_pointers/` | 30 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, trapping rain water, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, doubled-pair checks, increasing subarray length, and mountain peak detection. |
@@ -26,7 +26,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 ## Topics Covered
 
 - Array traversal, sorting, pair sums, and subarray problems
-- Backtracking on arrays, recursive subset/permutation generation for arrays and strings, subset-sum and combination-sum target searches, parenthesis generation, N-Queens board placement, and rat-in-a-maze path finding
+- Backtracking on arrays, recursive subset/permutation generation for arrays and strings (including permutations without adjacent duplicates), subset-sum and combination-sum target searches, parenthesis generation, N-Queens board placement, and rat-in-a-maze path finding
 - Binary search for direct target lookup, insert position, finding first, last, or both occurrences of a target, rotated sorted array search (with or without duplicates), finding minimum/maximum/peak elements in rotated sorted arrays, finding the number of rotations, finding bounds (largest less/equal and minimum greater/equal elements), finding the floor square root of an integer, finding the floor of the N-th root of an integer, solving the Koko eating bananas problem, and finding the minimum number of days to make m bouquets
 - Hashing with `HashMap` and `HashSet`
 - Linked list implementations, including singly and doubly linked list structure creation, forward/backward traversal, insertion/deletion at head/tail/position/value, list reversal, removing the N-th node from the end, palindrome checks, and adding two numbers
@@ -43,7 +43,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - Recursion fundamentals
 - Stack operations (e.g., reversing a stack, pushing an element to the bottom using recursion), queue implementation, stock span, next greater element, next greater element II, minimum stack, valid parentheses, duplicate parentheses, and max rectangular area in histogram problems
 - Revision binary search for direct target lookup, search insert position, and finding first/last occurrences of a target
-- Revision backtracking for basic recursion patterns, path building and unbuilding, combinations/subsets, combination sum with candidate reuse, unique combination sum without duplicates, and permutations
+- Revision backtracking for basic recursion patterns, path building and unbuilding, combinations/subsets, combination sum with candidate reuse, unique combination sum without duplicates, permutations, and checking whether a path exists between two cells in a grid
 - Loop-based and recursive pattern printing
 - Revision problems for interview-style practice
 
@@ -73,6 +73,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `PermutationArrayProblem.java` - generates all permutations of an integer array using a `used` boolean array and backtracking.
 - `PermutationIIProblem.java` - generates all unique permutations of an array that may contain duplicates by sorting first and skipping a value when the previous identical element is unused.
 - `Permutations.java` - generates all permutations of a string using backtracking with a `StringBuilder` and a `used` array.
+- `PermutationsWithoutAdjacentDuplicates.java` - generates all unique permutations of a string where no two identical characters are adjacent, using backtracking with a `used` array, duplicate skipping, and an adjacency check against the last character in the current path.
 - `PrintSubSetArr.java` - prints all subsets of an integer array using recursive include/exclude choices and backtracking.
 - `RatInMaizeProblem.java` - finds all paths from the top-left cell to the bottom-right cell of an `n x n` maze using backtracking with a visited matrix and direction letters `D`, `L`, `R`, and `U`.
 - `SubSetsWithDuplicates.java` - generates all unique subsets of an array containing duplicate values by applying a sorting and skip-duplicates strategy during backtracking.
@@ -257,10 +258,11 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `FindEqbIndex.java` - revisits finding the equilibrium index of an array.
 - `RangeSumQueries.java` - revisits prefix sum based range sum queries.
 
-#### Backtracking Revision (6)
+#### Backtracking Revision (7)
 
 - `Basic_Recursion_Backtracking.java` - revisits basic recursion and backtracking patterns with example problems.
 - `BuildAndUnbuildAPath.java` - revisits generating all combinations of size `k` from an array by recursively building a path (include the current element) and unbuilding it (remove after the recursive call / exclude branch).
+- `CheckGridPath.java` - checks whether a path exists from a start cell to a destination cell in a grid with obstacles using backtracking, a visited matrix, and four-direction movement (down, left, right, up).
 - `CombinationSum_Revision.java` - revisits finding all combinations that sum to a target, allowing the same candidate to be reused by staying on the current index when including an element, with early pruning when the running sum exceeds the target.
 - `CombinationSumII_Revision.java` - revisits finding unique combinations that sum to a target by including each candidate at most once and skipping duplicate values on the exclusion branch.
 - `Combinations_Revision.java` - revisits generating all subsets/combinations of an array using include/exclude recursion and backtracking.
