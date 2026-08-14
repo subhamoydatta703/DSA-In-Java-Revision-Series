@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 276 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 284 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -18,9 +18,10 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `prefixsum/` | 6 | Range sum queries, equilibrium index, subarray sums, window maximums, and prefix sum logics. |
 | `queue/` | 5 | Queue implementation using arrays, first non-repeating character using a queue, a circular queue, and stack/queue conversion examples. |
 | `recursion/` | 27 | Recursion basics, number-recursion practice, and basic/intermediate/intermediate-level recursion exercises (factorial, Fibonacci, palindrome, digit counting, summing, reversing, array operations, sorting, printing, string manipulation/skipping, subsets/subarrays, and permutations). |
-| `revision/` | 82 | Rewritten or revisited versions of common interview problems, currently split into binarysearch, hashmap_revision, prefixsum, backtracking, sliding_window, and two_pointer_revision folders. |
+| `revision/` | 83 | Rewritten or revisited versions of common interview problems, currently split into binarysearch, hashmap_revision, prefixsum, backtracking, sliding_window, and two_pointer_revision folders. |
 | `sliding_window/` | 27 | Fixed-size and variable-size examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, all anagrams in a string, permutation in a string, longest bounded-sum windows, smallest threshold-sum windows, longest windows with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, subarray product limits, non-repeating substring, fruits into basket, longest subarray with sum equal to k, and equal 0s and 1s substring problems. |
 | `stack/` | 11 | Stack operations (pushing to the bottom, reversing recursively), queue implementation, stock span, next greater element, next greater element II, minimum stack, baseball scoring, valid parentheses, duplicate parentheses, and max rectangular area in histogram problems. |
+| `trees/` | 7 | Binary tree node representation and recursive/iterative traversals (pre-order, in-order, post-order) plus level-order (BFS) traversal using a stack or queue. |
 | `two_pointers/` | 30 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, trapping rain water, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, doubled-pair checks, increasing subarray length, and mountain peak detection. |
 
 ## Topics Covered
@@ -31,6 +32,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - Hashing with `HashMap` and `HashSet`
 - Linked list implementations, including singly and doubly linked list structure creation, forward/backward traversal, insertion/deletion at head/tail/position/value, list reversal, removing the N-th node from the end, palindrome checks, and adding two numbers
 - Queue implementations (linear and circular queues using arrays), first non-repeating character tracking, and stack simulation using a queue
+- Binary tree representation and traversals — recursive pre-order, in-order, and post-order; iterative in-order and pre-order using an explicit stack; and level-order (BFS) traversal using a queue
 - Fixed-size sliding-window problems for contiguous subarray averages, sums, maximum sums, minimum sums, target-sum counting, window maximums, first negative values, distinct counts, frequency tracking, odd counts, vowel counts, finding all anagrams in a string, and checking for a permutation of a string inside another string
 - Variable-size sliding-window problems for longest bounded-sum subarrays, smallest subarrays meeting a target sum, longest subarrays with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, counting subarrays with product less than `k`, substrings without repeating characters, and substrings with equal 0s and 1s
 - Prefix sum algorithms (e.g., longest subarray with sum equal to `k`)
@@ -258,7 +260,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `FindEqbIndex.java` - revisits finding the equilibrium index of an array.
 - `RangeSumQueries.java` - revisits prefix sum based range sum queries.
 
-#### Backtracking Revision (8)
+#### Backtracking Revision (9)
 
 - `Basic_Recursion_Backtracking.java` - revisits basic recursion and backtracking patterns with example problems.
 - `BuildAndUnbuildAPath.java` - revisits generating all combinations of size `k` from an array by recursively building a path (include the current element) and unbuilding it (remove after the recursive call / exclude branch).
@@ -268,6 +270,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `Combinations_Revision.java` - revisits generating all subsets/combinations of an array using include/exclude recursion and backtracking.
 - `CountAllSimplePathsInGrid.java` - finds a path from a start cell to a destination cell in a grid with obstacles using backtracking and a visited matrix, printing the step count when the destination is reached.
 - `Permutations_Revision.java` - revisits generating all permutations of an integer array using backtracking with a `used` boolean array.
+- `NQueens_Revision.java` - revisits solving the N-Queens placement problem by checking columns and diagonals before placing each queen and backtracking after each recursive branch.
 
 #### Sliding Window Revision
 
@@ -375,6 +378,16 @@ The code is organized for learning, revision, and quick experimentation rather t
 - `StockSpanProblem.java` - solves the stock span problem using a stack to find consecutive days of lower or equal prices.
 - `ValidParentheses.java` - checks whether parentheses in an expression are balanced/valid.
 
+### Trees
+
+- `BinTreeRepresentation.java` - defines a binary tree `Node` class with `left` and `right` children and builds a small tree.
+- `InOrderTraversal.java` - traverses a binary tree in-order recursively.
+- `InOrderTraversalUsingStack.java` - traverses a binary tree in-order iteratively using an explicit stack.
+- `LevelOrderTraversal.java` - traverses a binary tree level by level (BFS) using a queue.
+- `PostOrderTraversal.java` - traverses a binary tree post-order recursively.
+- `PreOrderTraversal.java` - traverses a binary tree pre-order recursively.
+- `PreOrderTraversalUsingStack.java` - traverses a binary tree pre-order iteratively using an explicit stack.
+
 ### Two Pointers
 
 - `AllPairsSmallerisDoublethanLarger.java` - print pairs where the larger value is double the smaller value.
@@ -479,6 +492,9 @@ java linked_list.singly_linked_list.SinglyLinkedList
 
 javac linked_list/doubly_linked_list/ReverseDoublyLinkedList.java
 java linked_list.doubly_linked_list.ReverseDoublyLinkedList
+
+javac trees/LevelOrderTraversal.java
+java trees.LevelOrderTraversal
 ```
 
 For files that read from standard input, type the expected values after running the program. For example, `arrays/ArrayInputSortPractice.java` expects the array size first, followed by the array elements.
