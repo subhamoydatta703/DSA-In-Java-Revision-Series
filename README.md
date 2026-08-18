@@ -1,6 +1,6 @@
 # DSA in Java
 
-This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 284 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
+This repository is a Java practice workspace for Data Structures and Algorithms. It currently contains 287 Java source files grouped by topic. Most files are standalone `main` classes that can be compiled and run from the repository root.
 
 The code is organized for learning, revision, and quick experimentation rather than as one large application. Many examples use hard-coded sample arrays or strings, while a few files read input from the console with `Scanner`.
 
@@ -21,7 +21,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 | `revision/` | 83 | Rewritten or revisited versions of common interview problems, currently split into binarysearch, hashmap_revision, prefixsum, backtracking, sliding_window, and two_pointer_revision folders. |
 | `sliding_window/` | 27 | Fixed-size and variable-size examples for averages, sums, maximum and minimum sums, target-sum counts, window maximums, first negative values, odd counts, distinct counts, frequency tracking, vowel counting, all anagrams in a string, permutation in a string, longest bounded-sum windows, smallest threshold-sum windows, longest windows with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, subarray product limits, non-repeating substring, fruits into basket, longest subarray with sum equal to k, and equal 0s and 1s substring problems. |
 | `stack/` | 11 | Stack operations (pushing to the bottom, reversing recursively), queue implementation, stock span, next greater element, next greater element II, minimum stack, baseball scoring, valid parentheses, duplicate parentheses, and max rectangular area in histogram problems. |
-| `trees/` | 7 | Binary tree node representation and recursive/iterative traversals (pre-order, in-order, post-order) plus level-order (BFS) traversal using a stack or queue. |
+| `trees/` | 10 | Binary tree node representation, recursive and iterative traversals (pre-order, in-order, post-order) using recursion or an explicit stack, level-order (BFS) traversal using a queue, plus maximum-depth and height-balanced tree checks. |
 | `two_pointers/` | 30 | Two-pointer practice for palindrome checks, sentence palindrome validation, array and string reversal, pair sums, product pairs, boat pairing, Dutch National Flag sorting, container-water area, trapping rain water, triplet sums, closest sum problems, Pythagorean triplets, common-element checks, minimum difference, duplicate and frequency checks, duplicate removal, moving zeroes/ones, sorted squares, distinct-value counting, doubled-pair checks, increasing subarray length, and mountain peak detection. |
 
 ## Topics Covered
@@ -32,7 +32,7 @@ The code is organized for learning, revision, and quick experimentation rather t
 - Hashing with `HashMap` and `HashSet`
 - Linked list implementations, including singly and doubly linked list structure creation, forward/backward traversal, insertion/deletion at head/tail/position/value, list reversal, removing the N-th node from the end, palindrome checks, and adding two numbers
 - Queue implementations (linear and circular queues using arrays), first non-repeating character tracking, and stack simulation using a queue
-- Binary tree representation and traversals — recursive pre-order, in-order, and post-order; iterative in-order and pre-order using an explicit stack; and level-order (BFS) traversal using a queue
+- Binary tree representation and traversals — recursive pre-order, in-order, and post-order; iterative pre-order, in-order, and post-order using an explicit stack; level-order (BFS) traversal using a queue; maximum-depth computation; and height-balanced tree checking
 - Fixed-size sliding-window problems for contiguous subarray averages, sums, maximum sums, minimum sums, target-sum counting, window maximums, first negative values, distinct counts, frequency tracking, odd counts, vowel counts, finding all anagrams in a string, and checking for a permutation of a string inside another string
 - Variable-size sliding-window problems for longest bounded-sum subarrays, smallest subarrays meeting a target sum, longest subarrays with at most `k` distinct elements, longest repeating character replacement, max consecutive ones with flips, minimum window substring, counting subarrays with product less than `k`, substrings without repeating characters, and substrings with equal 0s and 1s
 - Prefix sum algorithms (e.g., longest subarray with sum equal to `k`)
@@ -381,10 +381,13 @@ The code is organized for learning, revision, and quick experimentation rather t
 ### Trees
 
 - `BinTreeRepresentation.java` - defines a binary tree `Node` class with `left` and `right` children and builds a small tree.
+- `CheckBalancedBinTree.java` - checks whether a binary tree is height-balanced by returning `-1` when any subtree becomes unbalanced.
+- `FindMaxDepth.java` - finds the maximum depth (height) of a binary tree recursively.
 - `InOrderTraversal.java` - traverses a binary tree in-order recursively.
 - `InOrderTraversalUsingStack.java` - traverses a binary tree in-order iteratively using an explicit stack.
 - `LevelOrderTraversal.java` - traverses a binary tree level by level (BFS) using a queue.
 - `PostOrderTraversal.java` - traverses a binary tree post-order recursively.
+- `PostOrderTraversalUsingStack.java` - traverses a binary tree post-order iteratively using both a two-stack and a single-stack approach.
 - `PreOrderTraversal.java` - traverses a binary tree pre-order recursively.
 - `PreOrderTraversalUsingStack.java` - traverses a binary tree pre-order iteratively using an explicit stack.
 

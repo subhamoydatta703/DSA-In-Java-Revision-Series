@@ -79,8 +79,8 @@ public class PostOrderTraversalUsingStack {
         root.left.right = new Node(5);
 
         // right node/child of root
-        root.right.left = new Node(6);
-        root.right.right = new Node(7);
+        // root.right.left = new Node(6);
+        // root.right.right = new Node(7);
 
         // postOrderTwoStack(root);
         postOrderOneStack(root);
