@@ -7,7 +7,7 @@ import trees.BinTreeRepresentation.Node;
 
 public class PreOrderTraversalUsingStack {
 
-    static void preOrderStack(Node root) {
+    public static void preOrderStack(Node root) {
         Deque<Node> st = new ArrayDeque<>();
         if (root == null)
             return;
